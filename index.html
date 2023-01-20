@@ -4,17 +4,23 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Demo</title>
-      <script type="module" crossorigin src="./assets/modulepreload-polyfill-ec808ebb.js"></script>
-      <script type="module" crossorigin src="./assets/CustomElement-a58215c4.js"></script>
-      <script type="module" crossorigin src="./sample.js"></script>
-      <script type="module" crossorigin src="./services-sample.js"></script>
+      <script type="module" crossorigin src="./index.js"></script>
+      <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-ec808ebb.js">
+      <link rel="modulepreload" crossorigin href="./assets/CustomElement-6f09ff1e.js">
+      <link rel="modulepreload" crossorigin href="./sample.js">
+      <link rel="modulepreload" crossorigin href="./services-sample.js">
     </head>
     <body>
         <sample-element></sample-element>
+        <div style="display: flex; gap: 10px;">
+            <button onclick="document.querySelector('#test').setAttribute('date', new Date().toString())">click for attribute update</button>
+            <date-sample id="test"></date-sample>
+        </div>
         <services-sample></services-sample>
         <div>
             <a href="./sites/example-site/">Link to nested site</a>
         </div>
+        
         
         
     </body>

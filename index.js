@@ -1,0 +1,1 @@
+import"./assets/modulepreload-polyfill-ec808ebb.js";import{j as e}from"./sample.js";import{c as m}from"./assets/CustomElement-6f09ff1e.js";import"./services-sample.js";function o({date:t="empty"}){return e("div",{children:t})}const n=m({component:o,attributes:["date"]});customElements.define("date-sample",n);
