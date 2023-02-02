@@ -1,1 +1,1 @@
-import{c as e}from"./assets/CustomElement-76d57c6a.js";import{j as n}from"./assets/jsx-runtime-a50c60ea.js";const a={};function o({date:t="N/A"}){return n("div",{children:["Current date: ",t]})}const r=e({component:o,attributes:["date"],packages:a});customElements.define("date-app",r);
+import{c as e}from"./assets/CustomElement-aa9e4c6a.js";import{j as n}from"./assets/jsx-runtime-fa3491b4.js";const a={};function o({date:t="N/A"}){return n("div",{children:["Current date: ",t]})}const r=e({component:o,attributes:["date"],packages:a});customElements.define("date-app",r);

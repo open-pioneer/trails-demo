@@ -1,1 +1,0 @@
-import{r as s,S as t}from"./CustomElement-76d57c6a.js";class i{constructor(){console.debug("Log Service created")}destroy(){console.debug("Log Service destroyed")}log(e){console.info("LOG: "+e)}}function u(o,e){const r=s.useContext(t);return s.useMemo(()=>r?.getService(o,e),[r,o,e])}export{i as L,u};

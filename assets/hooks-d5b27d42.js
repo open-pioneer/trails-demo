@@ -1,0 +1,1 @@
+import{r,S as s}from"./CustomElement-aa9e4c6a.js";class l{constructor({properties:e}){const o=e.logLevel;console.debug("Log Service created with log level",o)}destroy(){console.debug("Log Service destroyed")}log(e){console.info("LOG: "+e)}}function i(t,e){const o=r.useContext(s);return r.useMemo(()=>o?.getService(t,e),[o,t,e])}export{l as L,i as u};
