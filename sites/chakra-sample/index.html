@@ -4,13 +4,35 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Date App Demo</title>
-      <script type="module" crossorigin src="../../assets/chakra-sample-d65f93d6.js"></script>
+        <style>
+            html,
+            body,
+            .container {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .app {
+                flex: 0 0 auto;
+                width: 80%;
+                height: 80%;
+            }
+        </style>
+      <script type="module" crossorigin src="../../assets/chakra-sample-99bd1c59.js"></script>
       <link rel="modulepreload" crossorigin href="../../assets/modulepreload-polyfill-ec808ebb.js">
-      <link rel="modulepreload" crossorigin href="../../assets/CustomElement-a0036c52.js">
+      <link rel="modulepreload" crossorigin href="../../assets/CustomElement-79ff0ffe.js">
     </head>
     <body>
-        <div style="display: flex; gap: 10px">
-            <chakra-app></chakra-app>
+        <div class="container">
+            <chakra-app class="app"></chakra-app>
         </div>
         
     </body>
