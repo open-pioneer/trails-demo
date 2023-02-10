@@ -1,1 +1,0 @@
-import{r as s,a6 as c,a7 as n,a8 as a}from"./CustomElement-a3926f62.js";function p(r,e,t){const o=s.useContext(c);return s.useMemo(()=>i("useService",o).getService(r,e,t??{}),[o,r,e,t])}function i(r,e){if(!e)throw new n(a.INTERNAL,`"Failed to access package context from '${r}': react integration was not set up properly.`);return e}export{p as u};
