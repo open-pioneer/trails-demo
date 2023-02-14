@@ -1,0 +1,1 @@
+import{r as s,a7 as c,a8 as n,a9 as a}from"./ObservableBox-f8190ad4.js";function p(r,e,t){const o=s.useContext(c);return s.useMemo(()=>i("useService",o).getService(r,e,t??{}),[o,r,e,t])}function i(r,e){if(!e)throw new n(a.INTERNAL,`"Failed to access package context from '${r}': react integration was not set up properly.`);return e}export{p as u};
