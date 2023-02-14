@@ -1,0 +1,1 @@
+import{g as i,u as c,o as r,b as t,f as o,e as g}from"./ObservableBox-70dd61b3.js";var m=i(function(a,s){const e=c("Heading",a),{className:f,...n}=r(a);return t(o.h2,{ref:s,className:g("chakra-heading",a.className),...n,__css:e})});m.displayName="Heading";export{m as H};
