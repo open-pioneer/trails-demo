@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>API Sample</title>
-      <script type="module" crossorigin src="../../assets/api-sample-0a8e67c5.js"></script>
+      <script type="module" crossorigin src="../../assets/api-sample-283c19aa.js"></script>
       <link rel="modulepreload" crossorigin href="../../assets/modulepreload-polyfill-ec808ebb.js">
       <link rel="modulepreload" crossorigin href="../../assets/ObservableBox-70dd61b3.js">
       <link rel="modulepreload" crossorigin href="../../assets/events-960f2965.js">
@@ -17,6 +17,10 @@
         
     </body>
     <script>
+        document.getElementById("app").addEventListener("my-custom-event", (event) => {
+            console.log("Got event from app:", event);
+        });
+
         customElements.whenDefined("api-app").then(() => {
             const app = document.getElementById("app");
             app.when().then((api) => {
@@ -24,9 +28,6 @@
                     api.changeText("Dies ist ein Test");
                     console.log("changeText called");
                 }, 3000);
-            });
-            app.addEventListener("my-event-type", (event) => {
-                console.log("Got event:", event);
             });
         });
     </script>
