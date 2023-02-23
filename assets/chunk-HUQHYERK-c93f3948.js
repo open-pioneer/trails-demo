@@ -1,1 +1,0 @@
-import{S as o}from"./chunk-SRMZVY4F-76920d7d.js";import{h as t,j as e}from"./ObservableBox-2ce7664b.js";var i=t((a,r)=>e(o,{align:"center",...a,direction:"row",ref:r}));i.displayName="HStack";export{i as H};
