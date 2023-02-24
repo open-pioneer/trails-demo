@@ -4,13 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>API Sample</title>
-      <script type="module" crossorigin src="../../assets/a8722ef603e1.js"></script>
-      <link rel="modulepreload" crossorigin href="../../assets/2b21926dd1dd.js">
+      <script type="module" crossorigin src="../../assets/be9e8655f72d.js"></script>
+      <link rel="modulepreload" crossorigin href="../../assets/311de3f9d3bd.js">
       <link rel="modulepreload" crossorigin href="../../assets/960f2965a833.js">
       <link rel="modulepreload" crossorigin href="../../assets/4eca66f82c38.js">
-      <link rel="modulepreload" crossorigin href="../../assets/b7806437fdd0.js">
-      <link rel="modulepreload" crossorigin href="../../assets/306950c9607a.js">
-      <link rel="modulepreload" crossorigin href="../../assets/fd6014511fa9.js">
+      <link rel="modulepreload" crossorigin href="../../assets/7cb0865c7300.js">
+      <link rel="modulepreload" crossorigin href="../../assets/df80a4bce243.js">
+      <link rel="modulepreload" crossorigin href="../../assets/114150e3f41a.js">
+      <link rel="modulepreload" crossorigin href="../../assets/826f1388077c.js">
     </head>
     <body>
         <api-app id="app"></api-app>
@@ -24,15 +25,10 @@
         customElements.whenDefined("api-app").then(() => {
             const app = document.getElementById("app");
             app.when().then((api) => {
-                setTimeout(() => {
-                    api.changeText("Dies ist ein Test");
-                    console.log("changeText called");
-
-                    setTimeout(() => {
-                        api.changeText("Dies ist ein noch neuerer Text");
-                        console.log("changeText2 called");
-                    }, 3000);
-                }, 3000);
+                let count = 0;
+                setInterval(() => {
+                    api.changeText(`Text has been changed ${++count} times.`);
+                }, 1000);
             });
         });
     </script>
