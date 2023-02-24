@@ -4,15 +4,24 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Open Layers App Demo</title>
+        <style>
+            html,
+            body {
+                margin: 0px;
+            }
+
+            .full-height {
+                height: 100%;
+                max-height: 100%;
+            }
+        </style>
       <script type="module" crossorigin src="../../assets/9eb897e79b6a.js"></script>
       <link rel="modulepreload" crossorigin href="../../assets/18ff84afde22.js">
       <link rel="modulepreload" crossorigin href="../../assets/805d92cdbc12.js">
     </head>
 
-    <body style="height: 100%; margin: 0px">
-        <div style="height: 100%">
-            <ol-map-app id="test"></ol-map-app>
-        </div>
+    <body class="full-height">
+        <ol-map-app class="full-height" id="test"></ol-map-app>
         
     </body>
 </html>
