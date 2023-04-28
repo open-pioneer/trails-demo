@@ -1,0 +1,1 @@
+const e=JSON.parse('{"ol-map":{},"@open-pioneer/ol-layer-control":{"undefined-layer-title":"Kein Layername definiert"},"@open-pioneer/layout-sidebar":{"toggle.expand":"Ausklappen","toggle.collapse":"Einklappen"}}');export{e as default};
