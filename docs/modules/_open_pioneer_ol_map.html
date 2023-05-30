@@ -15,7 +15,6 @@
 <li><a href="../index.html">Open Pioneer Packages</a></li>
 <li><a href="_open_pioneer_ol_map.html">@open-pioneer/ol-map</a></li></ul>
 <h1>Module @open-pioneer/ol-map</h1></div>
-<section class="tsd-panel-group">
 <section class="tsd-panel tsd-typography"><a id="md:open-pioneerol-map" class="tsd-anchor"></a><h1><a href="#md:open-pioneerol-map">@open-pioneer/ol-map</a></h1><p>This package provides a map container component to integrate an <a href="https://openlayers.org/">open layers</a> map into an open pioneer project.
 Besides the component, there is a service, which handles the registration and creation of a map.</p>
 <a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><a id="md:map-container-component" class="tsd-anchor"></a><h3><a href="#md:map-container-component">Map container component</a></h3><p>To integrate a map container in a react template, place it at the point where it should appear.
@@ -31,7 +30,7 @@ For more configuration of the map see in <code>./ProMapContainer.tsx</code> and 
 While injecting it the common way, you can access the map via the following snippet:</p>
 <pre><code class="language-ts"><span class="hl-6">// get open layers map registry</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-7">olMapRegistry</span><span class="hl-1"> = </span><span class="hl-5">useService</span><span class="hl-1">(</span><span class="hl-3">&quot;ol-map.MapRegistry&quot;</span><span class="hl-1">);</span><br/><span class="hl-6">// get mapState with a given map id</span><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-7">mapState</span><span class="hl-1"> = </span><span class="hl-5">useAsync</span><span class="hl-1">(</span><span class="hl-4">async</span><span class="hl-1"> () </span><span class="hl-4">=&gt;</span><span class="hl-1"> </span><span class="hl-0">await</span><span class="hl-1"> </span><span class="hl-2">olMapRegistry</span><span class="hl-1">.</span><span class="hl-5">getMap</span><span class="hl-1">(</span><span class="hl-7">MAP_ID</span><span class="hl-1">));</span>
 </code><button>Copy</button></pre>
-</section></section>
+</section>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <h3 class="tsd-index-heading uppercase">Index</h3>
