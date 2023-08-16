@@ -15,27 +15,27 @@
 <li><a href="../index.html">Open Pioneer Packages</a></li>
 <li><a href="_open_pioneer_authentication.html">@open-pioneer/authentication</a></li></ul>
 <h1>Module @open-pioneer/authentication - v0.0.1</h1></div>
-<section class="tsd-panel tsd-typography"><a id="md:open-pioneerauthentication" class="tsd-anchor"></a><h1><a href="#md:open-pioneerauthentication">@open-pioneer/authentication</a></h1><p>The authentication package implements a central service to handle the current user&#39;s session.</p>
-<a id="md:authentication-plugins" class="tsd-anchor"></a><h2><a href="#md:authentication-plugins">Authentication plugins</a></h2><p>The authentication package cannot be used on its own: it requires a service providing <code>authentication.AuthPlugin</code> to be present in the application.
-The plugin must implement the actual authentication flow.</p>
-<p>See <a href="#implementing-an-authentication-plugin">below</a> for how to implement an authentication plugin.</p>
+<section class="tsd-panel tsd-typography"><a id="md:open-pioneerauthentication" class="tsd-anchor"></a><h1><a href="#md:open-pioneerauthentication">@open-pioneer/authentication</a></h1><p>This package implements a central service to handle the current user&#39;s session.</p>
+<a id="md:authentication-plugins" class="tsd-anchor"></a><h2><a href="#md:authentication-plugins">Authentication plugins</a></h2><p>The authentication package cannot be used on its own.
+It requires an authentication plugin, that implements the actual authentication flow.</p>
+<p>For more information, see <a href="#implementing-an-authentication-plugin">implementing an authentication plugin</a>.</p>
 <a id="md:use-cases" class="tsd-anchor"></a><h2><a href="#md:use-cases">Use cases</a></h2><a id="md:retrieving-the-current-authentication-state" class="tsd-anchor"></a><h3><a href="#md:retrieving-the-current-authentication-state">Retrieving the current authentication state</a></h3><p>To inspect the current authentication state, inject a reference to the <code>AuthService</code> by referencing <code>&quot;authentication.AuthService&quot;</code>.</p>
 <p>The methods <code>getAuthState()</code> and <code>getSessionInfo()</code> return information about the current state:</p>
 <pre><code class="language-js"><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">authService</span><span class="hl-2"> = ...; </span><span class="hl-12">// injected</span><br/><br/><span class="hl-12">// Returns SessionInfo if the user is currently logged in, or undefined otherwise.</span><br/><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">sessionInfo</span><span class="hl-2"> = </span><span class="hl-11">await</span><span class="hl-2"> </span><span class="hl-6">authService</span><span class="hl-2">.</span><span class="hl-9">getSessionInfo</span><span class="hl-2">();</span><br/><br/><span class="hl-12">// Like the above, but synchronous and includes intermediate states like &quot;pending&quot;.</span><br/><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">state</span><span class="hl-2"> = </span><span class="hl-6">authService</span><span class="hl-2">.</span><span class="hl-9">getAuthState</span><span class="hl-2">();</span><br/><br/><span class="hl-12">// Use `on(&quot;changed&quot;, ...)` to be notified about changes.</span><br/><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">handle</span><span class="hl-2"> = </span><span class="hl-6">authService</span><span class="hl-2">.</span><span class="hl-9">on</span><span class="hl-2">(</span><span class="hl-7">&quot;changed&quot;</span><span class="hl-2">, () </span><span class="hl-4">=&gt;</span><span class="hl-2"> {</span><br/><span class="hl-2">    </span><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">newState</span><span class="hl-2"> = </span><span class="hl-6">authService</span><span class="hl-2">.</span><span class="hl-9">getAuthState</span><span class="hl-2">();</span><br/><span class="hl-2">});</span><br/><br/><span class="hl-12">// Don&#39;t forget to clean up event handles in the future</span><br/><span class="hl-6">handle</span><span class="hl-2">.</span><span class="hl-9">destroy</span><span class="hl-2">();</span>
 </code><button>Copy</button></pre>
-<a id="md:enforcing-authentication" class="tsd-anchor"></a><h3><a href="#md:enforcing-authentication">Enforcing authentication</a></h3><p>Some applications require the user to be always logged in.</p>
-<p>Authentication can be enforced by wrapping the application with the <code>&lt;ForceAuth /&gt;</code> component:</p>
+<a id="md:enforcing-authentication" class="tsd-anchor"></a><h3><a href="#md:enforcing-authentication">Enforcing authentication</a></h3><p>To make sure that only users, that are logged in, can use an application, enforce the authentication flow by wrapping the application with the <code>&lt;ForceAuth /&gt;</code> component:</p>
 <pre><code class="language-jsx"><span class="hl-12">// AppUI.jsx</span><br/><span class="hl-11">import</span><span class="hl-2"> { </span><span class="hl-6">ForceAuth</span><span class="hl-2"> } </span><span class="hl-11">from</span><span class="hl-2"> </span><span class="hl-7">&quot;@open-pioneer/authentication&quot;</span><span class="hl-2">;</span><br/><br/><span class="hl-11">export</span><span class="hl-2"> </span><span class="hl-4">function</span><span class="hl-2"> </span><span class="hl-9">AppUI</span><span class="hl-2">() {</span><br/><span class="hl-2">    </span><span class="hl-11">return</span><span class="hl-2"> (</span><br/><span class="hl-2">        </span><span class="hl-0">&lt;</span><span class="hl-8">ForceAuth</span><span class="hl-0">&gt;</span><br/><span class="hl-2">            </span><span class="hl-0">&lt;</span><span class="hl-8">TheRestOfYourApplication</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span><br/><span class="hl-2">        </span><span class="hl-0">&lt;/</span><span class="hl-8">ForceAuth</span><span class="hl-0">&gt;</span><br/><span class="hl-2">    );</span><br/><span class="hl-2">}</span>
 </code><button>Copy</button></pre>
-<p><code>ForceAuth</code> will render its children (your application) if the user is authenticated.
-Otherwise, it will render the authentication plugin&#39;s <em>fallback</em> component (see below).
-It will be updated correctly if the authentication state changes.</p>
-<a id="md:fallback" class="tsd-anchor"></a><h4><a href="#md:fallback"><em>Fallback</em></a></h4><p>If the user is not logged in, some <em>fallback</em> is shown to the user.
-The <em>fallback</em> must be implemented in the authentication plugin. Depending on the implementation of the authentication plugin,
-a fallback may be a login prompt, or as a simple message.
+<p><code>ForceAuth</code> renders its children (your application) if the user is authenticated.
+Otherwise, it renders the authentication plugin&#39;s <em>fallback</em> component (see below).
+It is updated if the authentication state changes.</p>
+<a id="md:fallback" class="tsd-anchor"></a><h4><a href="#md:fallback"><em>Fallback</em></a></h4><p>If the user is not logged in, a <em>fallback</em> is shown to the user.
+The <em>fallback</em> must be implemented in the authentication plugin.
+Depending on the implementation of the authentication plugin,
+a fallback can be a login prompt, or a simple message.
 Some plugins do not provide a visual fallback but an &quot;effect&quot; instead: an action to perform, such as a redirect to the authentication provider.</p>
 <p>Rendering of the login fallback can be customized by passing custom properties (<code>fallbackProps</code>) or by supplying a custom render function (<code>renderFallback</code>), see the API documentation.</p>
-<a id="md:triggering-logout" class="tsd-anchor"></a><h3><a href="#md:triggering-logout">Triggering logout</a></h3><p>Call the <code>AuthService</code>&#39;s <code>logout()</code> method to explicitly end the current session:</p>
+<a id="md:triggering-logout" class="tsd-anchor"></a><h3><a href="#md:triggering-logout">Triggering logout</a></h3><p>To explicitly end the current session, call the <code>AuthService</code>&#39;s <code>logout()</code> method:</p>
 <pre><code class="language-js"><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-10">authService</span><span class="hl-2"> = ...; </span><span class="hl-12">// injected</span><br/><span class="hl-6">authService</span><span class="hl-2">.</span><span class="hl-9">logout</span><span class="hl-2">();</span>
 </code><button>Copy</button></pre>
 <a id="md:implementing-an-authentication-plugin" class="tsd-anchor"></a><h3><a href="#md:implementing-an-authentication-plugin">Implementing an authentication plugin</a></h3><p>An authentication plugin (providing <code>authentication.AuthPlugin</code>) must be present in the application to support authentication.
@@ -45,13 +45,13 @@ The plugin implements the actual authentication flow.</p>
 <li><p>Provide the current authentication state by implementing <code>getAuthState()</code>.
 When authenticated, a user&#39;s authentication state contains session information, such as the user&#39;s <code>id</code>,
 an optional display name and arbitrary additional <code>attributes</code> that can be defined by the plugin.</p>
-<p>If the state changes internally (e.g. successful login, explicit logout, logout due to timeout, etc.),
+<p>If the state changes internally (for example successful login, explicit logout, logout due to timeout, etc.),
 the <code>changed</code> event must be emitted to notify the <code>AuthService</code>.</p>
 </li>
 <li><p>Return the login behavior value (a React component or a function to call) by implementing <code>getLoginBehavior()</code>.
 This could be a login dialog, a &quot;forbidden&quot; message (<em>&quot;fallback&quot;</em>) or a function implementing a redirect (&quot;effect&quot;).</p>
 </li>
-<li><p>Implement the <code>logout()</code> method: this method will be called when the user attempts to end their session.</p>
+<li><p>Implement the <code>logout()</code> method: this method is called when the user attempts to end their session.</p>
 </li>
 </ul>
 <p>A simple example is available in this project&#39;s <code>auth-sample</code>.</p>
