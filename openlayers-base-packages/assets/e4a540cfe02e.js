@@ -1,0 +1,1 @@
+const e=JSON.parse('{"ol-map":{"basemapLabel":"Hintergrundkarte","noBasemapLabel":"Ohne Hintergrundkarte"},"@open-pioneer/experimental-layout-sidebar":{"toggle.expand":"Ausklappen","toggle.collapse":"Einklappen"},"@open-pioneer/experimental-ol-layer-control":{"loading":"Wird geladen...","error":"Fehler:","undefined-layer-title":"Kein Layername definiert"}}');export{e as default};
