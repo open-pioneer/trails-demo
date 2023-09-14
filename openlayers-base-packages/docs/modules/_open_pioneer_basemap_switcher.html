@@ -15,15 +15,17 @@
 <li><a href="../index.html">Open Pioneer Packages</a></li>
 <li><a href="_open_pioneer_basemap_switcher.html">@open-pioneer/basemap-switcher</a></li></ul>
 <h1>Module @open-pioneer/basemap-switcher - v0.0.1</h1></div>
-<section class="tsd-panel tsd-typography"><a id="md:open-pioneerbasemap-switcher" class="tsd-anchor"></a><h1><a href="#md:open-pioneerbasemap-switcher">@open-pioneer/basemap-switcher</a></h1><p>This package provides a basemap switcher component, which can be integrated besides a map to switch between different basemaps.</p>
-<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>Example: Simple integration of a basemap switcher with a given map id:</p>
+<section class="tsd-panel tsd-typography"><a id="md:open-pioneerbasemap-switcher" class="tsd-anchor"></a><h1><a href="#md:open-pioneerbasemap-switcher">@open-pioneer/basemap-switcher</a></h1><p>This package provides a component that can be integrated in an app together with a map to switch between different basemaps.</p>
+<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>Example: Integration of a basemap switcher with a given map id:</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
-<p>You can also add a label for the basemap switcher with an optional property <code>label</code>.</p>
-<p>Add a <code>noneBasemap</code> configuration, if you want to provide an option to deactivate all basemap layers at all with the optional property <code>noneBasemap</code>.</p>
-<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">label</span><span class="hl-2">=</span><span class="hl-7">&quot;Grundkarte&quot;</span><span class="hl-2"> </span><span class="hl-3">noneBasemap</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
+<p>To add a label to the basemap switcher, use the optional property <code>label</code>.</p>
+<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">label</span><span class="hl-2">=</span><span class="hl-7">&quot;Grundkarte&quot;</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
-<a id="md:customizing" class="tsd-anchor"></a><h3><a href="#md:customizing">Customizing</a></h3><p>The basemap switcher component can receive the <code>className</code> prop (optional string) that can be used to add additional the css classes of the component.</p>
+<p>To provide an option to deactivate all basemap layers, add the optional property <code>noneBasemap</code>.</p>
+<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">noneBasemap</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
+</code><button>Copy</button></pre>
+<a id="md:customizing" class="tsd-anchor"></a><h3><a href="#md:customizing">Customizing</a></h3><p>To add additional CSS classes to the component, add the optional property <code>className</code> (string).</p>
 <p>It is possible to receive a reference to the underlying DOM node (div) of the basemap switcher component using <code>useRef</code>.</p>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></p>
 </section>
