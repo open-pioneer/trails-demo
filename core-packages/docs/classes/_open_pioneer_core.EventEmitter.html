@@ -19,11 +19,11 @@
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>A support class that implements emitting and listening for events.</p>
 <p>This class supports inheritance or direct use:</p>
-<pre><code class="language-js"><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-7">emitter</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-5">EventEmitter</span><span class="hl-1">();</span><br/><span class="hl-4">class</span><span class="hl-1"> </span><span class="hl-8">MyClass</span><span class="hl-1"> </span><span class="hl-4">extends</span><span class="hl-1"> </span><span class="hl-8">EventEmitter</span><span class="hl-1"> {};</span>
+<pre><code class="language-js"><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">emitter</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">EventEmitter</span><span class="hl-1">();</span><br/><span class="hl-4">class</span><span class="hl-1"> </span><span class="hl-8">MyClass</span><span class="hl-1"> </span><span class="hl-4">extends</span><span class="hl-1"> </span><span class="hl-8">EventEmitter</span><span class="hl-1"> {};</span>
 </code><button>Copy</button></pre>
 <p>When using this class from TypeScript, declare your supported event
 types using an interface first:</p>
-<pre><code class="language-ts"><span class="hl-4">interface</span><span class="hl-1"> </span><span class="hl-8">Events</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-6">// key: event name, value: event type</span><br/><span class="hl-1">     </span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">: </span><span class="hl-8">MouseEvent</span><span class="hl-1">;</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-7">emitter</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-5">EventEmitter</span><span class="hl-1">&lt;</span><span class="hl-8">Events</span><span class="hl-1">&gt;();</span><br/><span class="hl-2">emitter</span><span class="hl-1">.</span><span class="hl-5">on</span><span class="hl-1">(</span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">, (</span><span class="hl-2">event</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-6">// event is a MouseEvent</span><br/><span class="hl-1">});</span><br/><span class="hl-2">emitter</span><span class="hl-1">.</span><span class="hl-5">emit</span><span class="hl-1">(</span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">, </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-5">MouseEvent</span><span class="hl-1">(...));</span>
+<pre><code class="language-ts"><span class="hl-4">interface</span><span class="hl-1"> </span><span class="hl-8">Events</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-7">// key: event name, value: event type</span><br/><span class="hl-1">     </span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">: </span><span class="hl-8">MouseEvent</span><span class="hl-1">;</span><br/><span class="hl-1">}</span><br/><br/><span class="hl-4">const</span><span class="hl-1"> </span><span class="hl-5">emitter</span><span class="hl-1"> = </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">EventEmitter</span><span class="hl-1">&lt;</span><span class="hl-8">Events</span><span class="hl-1">&gt;();</span><br/><span class="hl-2">emitter</span><span class="hl-1">.</span><span class="hl-6">on</span><span class="hl-1">(</span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">, (</span><span class="hl-2">event</span><span class="hl-1">) </span><span class="hl-4">=&gt;</span><span class="hl-1"> {</span><br/><span class="hl-1">     </span><span class="hl-7">// event is a MouseEvent</span><br/><span class="hl-1">});</span><br/><span class="hl-2">emitter</span><span class="hl-1">.</span><span class="hl-6">emit</span><span class="hl-1">(</span><span class="hl-3">&quot;mouse-clicked&quot;</span><span class="hl-1">, </span><span class="hl-4">new</span><span class="hl-1"> </span><span class="hl-6">MouseEvent</span><span class="hl-1">(...));</span>
 </code><button>Copy</button></pre>
 </div>
 <div class="tsd-comment tsd-typography"></div></section> 
@@ -37,7 +37,7 @@ types using an interface first:</p>
 <ul class="tsd-hierarchy">
 <li><span class="target">EventEmitter</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/ccc1211/src/packages/core/events.ts#L39">events.ts:39</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/fb27277/src/packages/core/events.ts#L39">events.ts:39</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -92,7 +92,7 @@ After <code>emit()</code> has completed, all listeners will already have been in
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/ccc1211/src/packages/core/events.ts#L79">events.ts:79</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/fb27277/src/packages/core/events.ts#L79">events.ts:79</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="on" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>on</span><a href="#on" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -128,7 +128,7 @@ when it is no longer needed.</p>
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/_open_pioneer_core.Resource.html" class="tsd-signature-type tsd-kind-interface">Resource</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/ccc1211/src/packages/core/events.ts#L48">events.ts:48</a></li></ul></aside></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/fb27277/src/packages/core/events.ts#L48">events.ts:48</a></li></ul></aside></li></ul></section>
 <section class="tsd-panel tsd-member"><a id="once" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>once</span><a href="#once" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -164,7 +164,7 @@ The listener function will automatically be unregistered after it has been calle
 <h4 class="tsd-returns-title">Returns <a href="../interfaces/_open_pioneer_core.Resource.html" class="tsd-signature-type tsd-kind-interface">Resource</a></h4>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/ccc1211/src/packages/core/events.ts#L63">events.ts:63</a></li></ul></aside></li></ul></section></section></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/fb27277/src/packages/core/events.ts#L63">events.ts:63</a></li></ul></aside></li></ul></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -191,7 +191,8 @@ The listener function will automatically be unregistered after it has been calle
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>Open <wbr/>Pioneer <wbr/>Core <wbr/>Packages</span></a>
 <ul class="tsd-small-nested-navigation">
-<li><a href="../modules/_open_pioneer_chakra_integration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/chakra-<wbr/>integration -<wbr/> v1.0.0</span></a></li>
+<li><a href="../modules/_open_pioneer_base_theme.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/base-<wbr/>theme -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_chakra_integration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/chakra-<wbr/>integration -<wbr/> v1.1.0</span></a></li>
 <li>
 <details class="tsd-index-accordion" open data-key="@open-pioneer/core"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg><a href="../modules/_open_pioneer_core.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/core -<wbr/> v1.1.0</span></a></summary>
 <div class="tsd-accordion-details">
@@ -212,10 +213,10 @@ The listener function will automatically be unregistered after it has been calle
 <li><a href="../functions/_open_pioneer_core.getErrorChain.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>get<wbr/>Error<wbr/>Chain</span></a></li>
 <li><a href="../functions/_open_pioneer_core.isAbortError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>is<wbr/>Abort<wbr/>Error</span></a></li>
 <li><a href="../functions/_open_pioneer_core.throwAbortError.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>throw<wbr/>Abort<wbr/>Error</span></a></li></ul></div></details></li>
-<li><a href="../modules/_open_pioneer_http.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/http -<wbr/> v1.0.2</span></a></li>
-<li><a href="../modules/_open_pioneer_integration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/integration -<wbr/> v1.0.2</span></a></li>
-<li><a href="../modules/_open_pioneer_runtime.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/runtime -<wbr/> v1.0.2</span></a></li>
-<li><a href="../modules/_open_pioneer_test_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/test-<wbr/>utils -<wbr/> v1.0.0</span></a></li></ul></nav></div></div></div>
+<li><a href="../modules/_open_pioneer_http.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/http -<wbr/> v1.0.3</span></a></li>
+<li><a href="../modules/_open_pioneer_integration.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/integration -<wbr/> v1.0.3</span></a></li>
+<li><a href="../modules/_open_pioneer_runtime.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/runtime -<wbr/> v1.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_test_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/test-<wbr/>utils -<wbr/> v1.0.1</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
