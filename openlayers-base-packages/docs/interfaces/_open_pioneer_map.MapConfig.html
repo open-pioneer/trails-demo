@@ -25,7 +25,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MapConfig</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/7f7b6f5/src/packages/map/api.ts#L356">map/api.ts:356</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e400503/src/packages/map/api.ts#L363">map/api.ts:363</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -54,7 +54,7 @@ For example, you cannot set the <code>target</code> because the target is contro
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/7f7b6f5/src/packages/map/api.ts#L400">map/api.ts:400</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e400503/src/packages/map/api.ts#L415">map/api.ts:415</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="initialView" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>initial<wbr/>View</span><a href="#initialView" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">initial<wbr/>View</span><span class="tsd-signature-symbol">?:</span> <a href="../types/_open_pioneer_map.InitialViewConfig.html" class="tsd-signature-type tsd-kind-type-alias">InitialViewConfig</a></div>
@@ -63,15 +63,20 @@ This can be an extent, or a (center, zoom) value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/7f7b6f5/src/packages/map/api.ts#L361">map/api.ts:361</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e400503/src/packages/map/api.ts#L368">map/api.ts:368</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="layers" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>layers</span><a href="#layers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">layers</span><span class="tsd-signature-symbol">?:</span> <a href="_open_pioneer_map.LayerConfig.html" class="tsd-signature-type tsd-kind-interface">LayerConfig</a><span class="tsd-signature-symbol">[]</span></div>
 <div class="tsd-comment tsd-typography"><p>Configures the layers of the map.</p>
+<p><strong>Layer order</strong></p>
+<p>Layers defined in this array are (by default) displayed in their listed order:
+layers defined first are shown at the bottom, and layers defined at a later position
+are shown above their predecessors.</p>
+<p>Note: base layers are always shown below all operational layers.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/7f7b6f5/src/packages/map/api.ts#L388">map/api.ts:388</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e400503/src/packages/map/api.ts#L403">map/api.ts:403</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="projection" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>projection</span><a href="#projection" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">projection</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;EPSG:3857&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:4326&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:25832&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:25833&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span></div>
@@ -82,7 +87,7 @@ This can be an extent, or a (center, zoom) value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/7f7b6f5/src/packages/map/api.ts#L383">map/api.ts:383</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e400503/src/packages/map/api.ts#L390">map/api.ts:390</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -124,6 +129,7 @@ This can be an extent, or a (center, zoom) value.</p>
 <li><a href="_open_pioneer_map.LayerConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Layer<wbr/>Config</span></a></li>
 <li><a href="_open_pioneer_map.LayerModel.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Layer<wbr/>Model</span></a></li>
 <li><a href="_open_pioneer_map.LayerModelEvents.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Layer<wbr/>Model<wbr/>Events</span></a></li>
+<li><a href="_open_pioneer_map.LayerRetrievalOptions.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Layer<wbr/>Retrieval<wbr/>Options</span></a></li>
 <li><a href="_open_pioneer_map.MapAnchorProps.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Map<wbr/>Anchor<wbr/>Props</span></a></li>
 <li><a href="_open_pioneer_map.MapConfig.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Map<wbr/>Config</span></a></li>
 <li><a href="_open_pioneer_map.MapConfigProvider.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>Map<wbr/>Config<wbr/>Provider</span></a></li>
