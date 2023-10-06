@@ -15,14 +15,16 @@
 <li><a href="../index.html">Open Pioneer Packages</a></li>
 <li><a href="_open_pioneer_basemap_switcher.html">@open-pioneer/basemap-switcher</a></li></ul>
 <h1>Module @open-pioneer/basemap-switcher - v0.0.1</h1></div>
-<section class="tsd-panel tsd-typography"><a id="md:open-pioneerbasemap-switcher" class="tsd-anchor"></a><h1><a href="#md:open-pioneerbasemap-switcher">@open-pioneer/basemap-switcher</a></h1><p>This package provides a component that can be integrated in an app together with a map to switch between different basemaps.</p>
-<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>Example: Integration of a basemap switcher with a given map id:</p>
+<section class="tsd-panel tsd-typography"><a id="md:open-pioneerbasemap-switcher" class="tsd-anchor"></a><h1><a href="#md:open-pioneerbasemap-switcher">@open-pioneer/basemap-switcher</a></h1><p>This package provides a UI component that allows a user to switch between different base maps.</p>
+<a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>To add the component to your app, insert the following snippet with a reference to a map ID:</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
 <p>To provide an option to deactivate all basemap layers, add the optional property <code>allowSelectingEmptyBasemap</code>.</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">BasemapSwitcher</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">allowSelectingEmptyBasemap</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
-<a id="md:accessibility" class="tsd-anchor"></a><h2><a href="#md:accessibility">Accessibility</a></h2><p>The package provides only a <code>HTMLSelectElement</code>. To be compliant with a11y guidelines (screen reader compatibility), a label must be added to the basemap switcher. Therefore, use one of the following attempts:</p>
+<a id="md:accessibility" class="tsd-anchor"></a><h2><a href="#md:accessibility">Accessibility</a></h2><p>The package provides only a <code>HTMLSelectElement</code>.
+To be compliant with a11y guidelines (screen reader compatibility), a label must be added to the basemap switcher.
+Therefore, use one of the following attempts:</p>
 <ul>
 <li>Wrap the <code>BasemapSwitcher</code> into a Chakra UI <code>FormControl</code> and set the <code>FormLabel</code> to a custom label.</li>
 <li>Use the <code>aria-labelledby</code> property of the <code>BasemapSwitcher</code> to specify that an anywhere defined label is used as the basemap switcher&#39;s label.</li>
