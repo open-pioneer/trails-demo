@@ -1,0 +1,1 @@
+const e=JSON.parse('{"measurement-app":{"measurementTitle":"Distance / Area measurement"},"@open-pioneer/measurement":{"measurementLabel":"Geometry","distance":"Distance","area":"Area","deleteMeasurementLabel":"Delete measurements"}}');export{e as default};
