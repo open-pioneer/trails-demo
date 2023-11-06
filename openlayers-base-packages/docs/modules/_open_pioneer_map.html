@@ -50,6 +50,11 @@ If no <code>verticalGap</code> is configured, a default vertical gap of <code>30
 <blockquote>
 <p>NOTE: To get the correct tab order, add the container anchor-points before other components.</p>
 </blockquote>
+<p>By default, certain pointer events from map anchor children (such as <code>pointer-down</code>) are stopped from bubbling up towards the map.
+This is done to &quot;hide&quot; those events from map interactions (such as drawing): this makes it possible to click into text or controls within a map anchor without interacting with the map.
+This behavior can be disabled by setting the <code>stopEvents</code> property to <code>false</code>:</p>
+<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">MapAnchor</span><span class="hl-2"> </span><span class="hl-3">position</span><span class="hl-2">=</span><span class="hl-7">&quot;top-right&quot;</span><span class="hl-2"> </span><span class="hl-3">stopEvents</span><span class="hl-2">=</span><span class="hl-4">{false}</span><span class="hl-0">&gt;</span><br/><span class="hl-2">    </span><span class="hl-4">{</span><span class="hl-12">/* Click events etc. will be seen by the map. This could be appropriate for non-interactive text-only overlays, for example. */</span><span class="hl-4">}</span><br/><span class="hl-0">&lt;/</span><span class="hl-8">MapAnchor</span><span class="hl-0">&gt;</span>
+</code><button>Copy</button></pre>
 <a id="md:map-configuration" class="tsd-anchor"></a><h3><a href="#md:map-configuration">Map configuration</a></h3><p>Register a service providing <code>map.MapConfigProvider</code> to configure the contents of a map.
 Such a provider is typically located in an app.</p>
 <p>Example: Configuration to register a service providing <code>map.MapConfigProvider</code>.</p>
