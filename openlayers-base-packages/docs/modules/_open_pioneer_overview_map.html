@@ -27,9 +27,11 @@
 This means that the <code>olLayer</code> used here should be a new layer instance that is not used anywhere else.
 Most importantly, you cannot (at this time) use an <code>.olLayer</code> from the <code>MapModel</code> directly.</p>
 </blockquote>
-<a id="md:configuring-the-size" class="tsd-anchor"></a><h3><a href="#md:configuring-the-size">Configuring the size</a></h3><p>The <code>OverviewMap</code> component defines a default size via its <code>.overview-map</code> CSS class.
-To override the default size, you can, for example, add a custom css class to the <code>OverviewMap</code> component and then define your own height or width there.
-The children of the map (the actual map view etc.) will resize themselves accordingly.</p>
+<a id="md:configuring-the-size" class="tsd-anchor"></a><h3><a href="#md:configuring-the-size">Configuring the size</a></h3><p>The <code>OverviewMap</code> component uses a default height of <code>200px</code> and width of <code>300px</code>.
+To override the default size, you can use the <code>height</code> and <code>width</code> props.
+Both props support the usual values supported by chakra:</p>
+<pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">OverviewMap</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">olLayer</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-6">overviewMapLayer</span><span class="hl-4">}</span><span class="hl-2"> </span><span class="hl-3">height</span><span class="hl-2">=</span><span class="hl-7">&quot;300px&quot;</span><span class="hl-2"> </span><span class="hl-3">width</span><span class="hl-2">=</span><span class="hl-7">&quot;400px&quot;</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
+</code><button>Copy</button></pre>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache-2.0</a></p>
 </section>
 <section class="tsd-panel-group tsd-index-group">
