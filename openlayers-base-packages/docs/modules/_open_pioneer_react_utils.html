@@ -28,10 +28,10 @@ This can be used for example to override the initial heading level or to force a
 </code><button>Copy</button></pre>
 <p>In the preceding example the topmost heading(s) in <code>TheRestOfYourApplication</code> start at level 2, and nested headings use increasing levels as usual.
 For more details, see the API documentation.</p>
-<a id="md:tool-buttons" class="tsd-anchor"></a><h2><a href="#md:tool-buttons">Tool Buttons</a></h2><p>The <code>ToolButton</code> component can be used to create a simple icon button with a tooltip and an <code>aria-label</code>.
-This is usually done to add an icon on the map:</p>
+<a id="md:tool-buttons" class="tsd-anchor"></a><h2><a href="#md:tool-buttons">Tool buttons</a></h2><p>To create a simple icon button with a tooltip and an <code>aria-label</code>, use the <code>ToolButton</code> component as in the following sample:</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">ToolButton</span><span class="hl-2"> </span><span class="hl-3">label</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-6">someLabel</span><span class="hl-4">}</span><span class="hl-2"> </span><span class="hl-3">icon</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-0">&lt;</span><span class="hl-8">SomeIcon</span><span class="hl-5"> </span><span class="hl-0">/&gt;</span><span class="hl-4">}</span><span class="hl-2"> </span><span class="hl-3">onClick</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-6">someEventHandler</span><span class="hl-4">}</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
+<p>This is used, for example, to add an icon button to the map.</p>
 <a id="md:hooks" class="tsd-anchor"></a><h2><a href="#md:hooks">Hooks</a></h2><a id="md:usecommoncomponentprops" class="tsd-anchor"></a><h3><a href="#md:usecommoncomponentprops">useCommonComponentProps()</a></h3><p>A helper hook that automatically computes <code>containerProps</code>: common properties to set on the topmost container element of a public component.</p>
 <p>For the time being, these properties are <code>className</code> (combined component class and optional additional class names) and <code>data-testid</code> (for tests).</p>
 <p>Example:</p>
@@ -95,7 +95,7 @@ This is useful to avoid re-triggering <code>useEffect</code>-hooks when only the
 <li>
 <ul>
 <li><a href="#md:titled-sections"><span>Titled sections</span></a></li>
-<li><a href="#md:tool-buttons"><span>Tool <wbr/>Buttons</span></a></li>
+<li><a href="#md:tool-buttons"><span>Tool buttons</span></a></li>
 <li><a href="#md:hooks"><span>Hooks</span></a></li>
 <li>
 <ul>
