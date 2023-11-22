@@ -1,1 +1,0 @@
-const e=JSON.parse('{"ol-app":{},"@open-pioneer/experimental-layout-sidebar":{"toggle.expand":"Expand","toggle.collapse":"Collapse"},"@open-pioneer/experimental-ol-layer-control":{"loading":"Loading...","error":"Error:","undefined-layer-title":"undefined layer title"}}');export{e as default};
