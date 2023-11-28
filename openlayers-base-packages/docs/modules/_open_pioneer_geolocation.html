@@ -19,12 +19,10 @@
 <a id="md:usage" class="tsd-anchor"></a><h2><a href="#md:usage">Usage</a></h2><p>To add the component to your app, insert the following snippet with a reference to a map ID:</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">Geolocation</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
-<p>If the geolocation was successful, the map is zoomed and centered to the user&#39;s position.</p>
-<blockquote>
-<p>Restriction: the map will only zoom once to the position directly after the geolocation was successful.
-After panning, or zoom in or zoom out of the map, the map isn&#39;t zoomed and centered after a changed user position.</p>
-</blockquote>
-<p>To use a custom maximal zoom level add the optional property <code>maxZoom</code>. It will be zoomed to the extent of the accuracy feature but at most to the defined <code>maxZoom</code>.</p>
+<p>If the localization was successful, the map is centered on the user&#39;s position and zoomed to the accuracy of the localization.
+If the position is updated, the map is centered again.</p>
+<p>Once a user zooms or moves the map, the map is no longer centered on new positions.</p>
+<p>To adjust the maximum zoom level, add the optional property <code>maxZoom</code>.</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">Geolocation</span><span class="hl-2"> </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><span class="hl-2"> </span><span class="hl-3">maxZoom</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-13">20</span><span class="hl-4">}</span><span class="hl-2"> </span><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
 <p>To configure the style of the user&#39;s position and accuracy, add the optional properties <code>positionFeatureStyle</code> or <code>accuracyFeatureStyle</code>:</p>
@@ -36,7 +34,7 @@ After panning, or zoom in or zoom out of the map, the map isn&#39;t zoomed and c
 <p>To use custom position options from the <a href="https://www.w3.org/TR/geolocation/#position_options_interface">Geolocation API</a>, add the optional property <code>trackingOptions</code>.</p>
 <pre><code class="language-jsx"><span class="hl-0">&lt;</span><span class="hl-8">Geolocation</span><br/><span class="hl-2">    </span><span class="hl-3">mapId</span><span class="hl-2">=</span><span class="hl-7">&quot;map_id&quot;</span><br/><span class="hl-2">    </span><span class="hl-3">trackingOptions</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-5">{</span><br/><span class="hl-5">        </span><span class="hl-6">enableHighAccuracy:</span><span class="hl-5"> </span><span class="hl-4">true</span><span class="hl-5">,</span><br/><span class="hl-5">        </span><span class="hl-6">timeout:</span><span class="hl-5"> </span><span class="hl-13">60000</span><span class="hl-5">,</span><br/><span class="hl-5">        </span><span class="hl-6">maximumAge:</span><span class="hl-5"> </span><span class="hl-13">600000</span><br/><span class="hl-5">    }</span><span class="hl-4">}</span><br/><span class="hl-0">/&gt;</span>
 </code><button>Copy</button></pre>
-<a id="md:notification" class="tsd-anchor"></a><h3><a href="#md:notification">Notification</a></h3><p>Add the <code>@open-pioneer/notifier</code> to your app to receive user notification. Otherwise, notifications will not be shown.</p>
+<a id="md:notification" class="tsd-anchor"></a><h3><a href="#md:notification">Notification</a></h3><p>To show user notifications, add the <code>@open-pioneer/notifier</code> to your app.</p>
 <a id="md:license" class="tsd-anchor"></a><h2><a href="#md:license">License</a></h2><p>Apache-2.0 (see <code>LICENSE</code> file)</p>
 </section>
 <section class="tsd-panel-group tsd-index-group">
