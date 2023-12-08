@@ -25,7 +25,7 @@
 <ul class="tsd-hierarchy">
 <li><span class="target">MapConfig</span></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/2f8c587/src/packages/map/api/MapConfig.ts#L71">map/api/MapConfig.ts:71</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e93768c/src/packages/map/api/MapConfig.ts#L71">map/api/MapConfig.ts:71</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -54,7 +54,7 @@ For example, you cannot set the <code>target</code> because the target is contro
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/2f8c587/src/packages/map/api/MapConfig.ts#L124">map/api/MapConfig.ts:124</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e93768c/src/packages/map/api/MapConfig.ts#L124">map/api/MapConfig.ts:124</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="initialView" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>initial<wbr/>View</span><a href="#initialView" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">initial<wbr/>View</span><span class="tsd-signature-symbol">?:</span> <a href="../types/_open_pioneer_map.InitialViewConfig.html" class="tsd-signature-type tsd-kind-type-alias">InitialViewConfig</a></div>
@@ -63,7 +63,7 @@ This can be an extent, or a (center, zoom) value.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/2f8c587/src/packages/map/api/MapConfig.ts#L76">map/api/MapConfig.ts:76</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e93768c/src/packages/map/api/MapConfig.ts#L76">map/api/MapConfig.ts:76</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="layers" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>layers</span><a href="#layers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">layers</span><span class="tsd-signature-symbol">?:</span> <a href="_open_pioneer_map.Layer.html" class="tsd-signature-type tsd-kind-interface">Layer</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-symbol">{}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></div>
@@ -76,19 +76,19 @@ are shown <em>above</em> their predecessors.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/2f8c587/src/packages/map/api/MapConfig.ts#L112">map/api/MapConfig.ts:112</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e93768c/src/packages/map/api/MapConfig.ts#L112">map/api/MapConfig.ts:112</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="projection" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>projection</span><a href="#projection" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">projection</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;EPSG:3857&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:4326&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:25832&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;EPSG:25833&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> &amp; </span><span class="tsd-signature-symbol">{}</span></div>
 <div class="tsd-comment tsd-typography"><p>Configures a specific projection, e.g. <code>&quot;EPSG:4326&quot;</code>.
 Defaults to <code>EPSG:3857</code>.</p>
 <p>To use custom projections, make sure that they are registered first:</p>
-<pre><code class="language-ts"><span class="hl-11">import</span><span class="hl-2"> { </span><span class="hl-6">registerProjections</span><span class="hl-2"> } </span><span class="hl-11">from</span><span class="hl-2"> </span><span class="hl-7">&quot;@open-pioneer/map&quot;</span><span class="hl-2">;</span><br/><br/><span class="hl-12">// Usually done at the top of the module.</span><br/><span class="hl-12">// This will register the projection(s) in proj4&#39;s global registry.</span><br/><span class="hl-9">registerProjections</span><span class="hl-2">({</span><br/><span class="hl-2">  </span><span class="hl-7">&quot;EPSG:31466&quot;</span><span class="hl-6">:</span><span class="hl-2"> </span><span class="hl-7">&quot;+proj=tmerc +lat_0=0 +lon_0=6 +k=1 +x_0=2500000 +y_0=0 +ellps=bessel +nadgrids=BETA2007.gsb +units=m +no_defs +type=crs&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">  </span><span class="hl-12">// ... more projections</span><br/><span class="hl-2">});</span><br/><br/><span class="hl-12">// later, use projection: &quot;EPSG:31466&quot;</span>
+<pre><code class="language-ts"><span class="hl-4">import</span><span class="hl-1"> { </span><span class="hl-5">registerProjections</span><span class="hl-1"> } </span><span class="hl-4">from</span><span class="hl-1"> </span><span class="hl-7">&quot;@open-pioneer/map&quot;</span><span class="hl-1">;</span><br/><br/><span class="hl-3">// Usually done at the top of the module.</span><br/><span class="hl-3">// This will register the projection(s) in proj4&#39;s global registry.</span><br/><span class="hl-6">registerProjections</span><span class="hl-1">({</span><br/><span class="hl-1">  </span><span class="hl-7">&quot;EPSG:31466&quot;</span><span class="hl-5">:</span><span class="hl-1"> </span><span class="hl-7">&quot;+proj=tmerc +lat_0=0 +lon_0=6 +k=1 +x_0=2500000 +y_0=0 +ellps=bessel +nadgrids=BETA2007.gsb +units=m +no_defs +type=crs&quot;</span><span class="hl-1">,</span><br/><span class="hl-1">  </span><span class="hl-3">// ... more projections</span><br/><span class="hl-1">});</span><br/><br/><span class="hl-3">// later, use projection: &quot;EPSG:31466&quot;</span>
 </code><button>Copy</button></pre>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/2f8c587/src/packages/map/api/MapConfig.ts#L99">map/api/MapConfig.ts:99</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/e93768c/src/packages/map/api/MapConfig.ts#L99">map/api/MapConfig.ts:99</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -115,7 +115,11 @@ Defaults to <code>EPSG:3857</code>.</p>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-namespace)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M9.33 16V7.24H10.77L13.446 14.74C13.43 14.54 13.41 14.296 13.386 14.008C13.37 13.712 13.354 13.404 13.338 13.084C13.33 12.756 13.326 12.448 13.326 12.16V7.24H14.37V16H12.93L10.266 8.5C10.282 8.692 10.298 8.936 10.314 9.232C10.33 9.52 10.342 9.828 10.35 10.156C10.366 10.476 10.374 10.784 10.374 11.08V16H9.33Z" fill="var(--color-text)"></path></g></svg><span>Open <wbr/>Pioneer <wbr/>Packages</span></a>
 <ul class="tsd-small-nested-navigation">
-<li><a href="../modules/_open_pioneer_experimental_layout_sidebar.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/experimental-<wbr/>layout-<wbr/>sidebar -<wbr/> v0.1.3</span></a></li>
+<li><a href="../modules/_open_pioneer_authentication.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/authentication -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_basemap_switcher.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/basemap-<wbr/>switcher -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_coordinate_viewer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/coordinate-<wbr/>viewer -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_geolocation.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/geolocation -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_local_storage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/local-<wbr/>storage -<wbr/> v0.0.1</span></a></li>
 <li>
 <details class="tsd-index-accordion" open data-key="@open-pioneer/map"><summary class="tsd-accordion-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="#icon-chevronDown"></use></svg><a href="../modules/_open_pioneer_map.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/map -<wbr/> v0.1.0</span></a></summary>
 <div class="tsd-accordion-details">
@@ -173,24 +177,19 @@ Defaults to <code>EPSG:3857</code>.</p>
 <li><a href="../functions/_open_pioneer_map.useProjection.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>use<wbr/>Projection</span></a></li>
 <li><a href="../functions/_open_pioneer_map.useResolution.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>use<wbr/>Resolution</span></a></li>
 <li><a href="../functions/_open_pioneer_map.useScale.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-64"></use></svg><span>use<wbr/>Scale</span></a></li></ul></div></details></li>
-<li><a href="../modules/_open_pioneer_map_test_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/map-<wbr/>test-<wbr/>utils -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_notifier.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/notifier -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_react_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/react-<wbr/>utils -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_authentication.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/authentication -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_coordinate_viewer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/coordinate-<wbr/>viewer -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_scale_viewer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/scale-<wbr/>viewer -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_basemap_switcher.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/basemap-<wbr/>switcher -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_map_navigation.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/map-<wbr/>navigation -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_map_test_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/map-<wbr/>test-<wbr/>utils -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_measurement.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/measurement -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_notifier.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/notifier -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_ogc_features.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/ogc-<wbr/>features -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_overview_map.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/overview-<wbr/>map -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_react_utils.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/react-<wbr/>utils -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_scale_bar.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/scale-<wbr/>bar -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_geolocation.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/geolocation -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_theme.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/theme -<wbr/> v0.1.0</span></a></li>
-<li><a href="../modules/_open_pioneer_local_storage.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/local-<wbr/>storage -<wbr/> v0.0.1</span></a></li>
-<li><a href="../modules/_open_pioneer_toc.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/toc -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_scale_viewer.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/scale-<wbr/>viewer -<wbr/> v0.1.0</span></a></li>
 <li><a href="../modules/_open_pioneer_search.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/search -<wbr/> v0.0.1</span></a></li>
-<li><a href="../modules/_open_pioneer_spatial_bookmarks.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/spatial-<wbr/>bookmarks -<wbr/> v0.0.1</span></a></li></ul></nav></div></div></div>
+<li><a href="../modules/_open_pioneer_spatial_bookmarks.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/spatial-<wbr/>bookmarks -<wbr/> v0.0.1</span></a></li>
+<li><a href="../modules/_open_pioneer_theme.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/theme -<wbr/> v0.1.0</span></a></li>
+<li><a href="../modules/_open_pioneer_toc.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4"></use></svg><span>@open-<wbr/>pioneer/toc -<wbr/> v0.1.0</span></a></li></ul></nav></div></div></div>
 <div class="tsd-generator">
 <p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div>
 <div class="overlay"></div></body></html>
