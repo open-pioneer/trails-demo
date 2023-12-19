@@ -28,9 +28,11 @@
 <li><span class="target">LayerConfig</span>
 <ul class="tsd-hierarchy">
 <li><a href="_open_pioneer_map.SimpleLayerConfig.html" class="tsd-signature-type tsd-kind-interface">SimpleLayerConfig</a></li>
-<li><a href="_open_pioneer_map.SimpleLayerConfig.html" class="tsd-signature-type tsd-kind-interface">SimpleLayerConfig</a></li></ul></li></ul></li></ul></section><aside class="tsd-sources">
+<li><a href="_open_pioneer_map.WMSLayerConfig.html" class="tsd-signature-type tsd-kind-interface">WMSLayerConfig</a></li>
+<li><a href="_open_pioneer_map.SimpleLayerConfig.html" class="tsd-signature-type tsd-kind-interface">SimpleLayerConfig</a></li>
+<li><a href="_open_pioneer_map.WMSLayerConfig.html" class="tsd-signature-type tsd-kind-interface">WMSLayerConfig</a></li></ul></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L134">map/api/layers/base.ts:134</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L137">map/api/layers/base.ts:137</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-index-accordion" open><summary class="tsd-accordion-summary tsd-index-summary">
@@ -40,6 +42,7 @@
 <h3 class="tsd-index-heading">Properties</h3>
 <div class="tsd-index-list"><a href="_open_pioneer_map.LayerConfig.html#attributes" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-1024"><rect fill="var(--color-icon-background)" stroke="#FF984D" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="12"></rect><path d="M9.354 16V7.24H12.174C12.99 7.24 13.638 7.476 14.118 7.948C14.606 8.412 14.85 9.036 14.85 9.82C14.85 10.604 14.606 11.232 14.118 11.704C13.638 12.168 12.99 12.4 12.174 12.4H10.434V16H9.354ZM10.434 11.428H12.174C12.646 11.428 13.022 11.284 13.302 10.996C13.59 10.7 13.734 10.308 13.734 9.82C13.734 9.324 13.59 8.932 13.302 8.644C13.022 8.356 12.646 8.212 12.174 8.212H10.434V11.428Z" fill="var(--color-text)"></path></g></svg><span>attributes?</span></a>
 <a href="_open_pioneer_map.LayerConfig.html#description" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>description?</span></a>
+<a href="_open_pioneer_map.LayerConfig.html#healthCheck" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>health<wbr/>Check?</span></a>
 <a href="_open_pioneer_map.LayerConfig.html#id" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>id?</span></a>
 <a href="_open_pioneer_map.LayerConfig.html#isBaseLayer" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>is<wbr/>Base<wbr/>Layer?</span></a>
 <a href="_open_pioneer_map.LayerConfig.html#title" class="tsd-index-link tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>title</span></a>
@@ -56,7 +59,7 @@ These can be arbitrary values.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="_open_pioneer_map.LayerBaseConfig.html">LayerBaseConfig</a>.<a href="_open_pioneer_map.LayerBaseConfig.html#attributes">attributes</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L53">map/api/layers/base.ts:53</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L56">map/api/layers/base.ts:56</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="description" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>description</span><a href="#description" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">description</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -66,7 +69,17 @@ Defaults to an empty string.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="_open_pioneer_map.LayerBaseConfig.html">LayerBaseConfig</a>.<a href="_open_pioneer_map.LayerBaseConfig.html#description">description</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L41">map/api/layers/base.ts:41</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L44">map/api/layers/base.ts:44</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member"><a id="healthCheck" class="tsd-anchor"></a>
+<h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>health<wbr/>Check</span><a href="#healthCheck" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">health<wbr/>Check</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="../types/_open_pioneer_map.HealthCheckFunction.html" class="tsd-signature-type tsd-kind-type-alias">HealthCheckFunction</a></div>
+<div class="tsd-comment tsd-typography"><p>Optional property to check the availability of the layer.
+It is possible to provide either a URL which indicates the state of the service (2xx response meaning &quot;ok&quot;)
+or a <a href="../types/_open_pioneer_map.HealthCheckFunction.html" class="tsd-kind-type-alias">HealthCheckFunction</a> performing a custom check and returning the state.</p>
+</div>
+<div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L151">map/api/layers/base.ts:151</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="id" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">id</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -76,7 +89,7 @@ Defaults to a generated id.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="_open_pioneer_map.LayerBaseConfig.html">LayerBaseConfig</a>.<a href="_open_pioneer_map.LayerBaseConfig.html#id">id</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L30">map/api/layers/base.ts:30</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L33">map/api/layers/base.ts:33</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member"><a id="isBaseLayer" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>is<wbr/>Base<wbr/>Layer</span><a href="#isBaseLayer" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">is<wbr/>Base<wbr/>Layer</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div>
@@ -86,7 +99,7 @@ Only one base layer can be active at a time.</p>
 </div>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L141">map/api/layers/base.ts:141</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L144">map/api/layers/base.ts:144</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="title" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><span>title</span><a href="#title" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">title</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
@@ -95,7 +108,7 @@ Only one base layer can be active at a time.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="_open_pioneer_map.LayerBaseConfig.html">LayerBaseConfig</a>.<a href="_open_pioneer_map.LayerBaseConfig.html#title">title</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L35">map/api/layers/base.ts:35</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L38">map/api/layers/base.ts:38</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member tsd-is-inherited"><a id="visible" class="tsd-anchor"></a>
 <h3 class="tsd-anchor-link"><code class="tsd-tag ts-flagOptional">Optional</code> <span>visible</span><a href="#visible" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">visible</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">boolean</span></div>
@@ -105,7 +118,7 @@ Defaults to <code>true</code>.</p>
 <div class="tsd-comment tsd-typography"></div><aside class="tsd-sources">
 <p>Inherited from <a href="_open_pioneer_map.LayerBaseConfig.html">LayerBaseConfig</a>.<a href="_open_pioneer_map.LayerBaseConfig.html#visible">visible</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/507f8d0/src/packages/map/api/layers/base.ts#L47">map/api/layers/base.ts:47</a></li></ul></aside></section></section></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/35fac2c/src/packages/map/api/layers/base.ts#L50">map/api/layers/base.ts:50</a></li></ul></aside></section></section></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -127,6 +140,7 @@ Defaults to <code>true</code>.</p>
 <ul>
 <li><a href="#attributes" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>attributes</span></a></li>
 <li><a href="#description" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>description</span></a></li>
+<li><a href="#healthCheck" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>health<wbr/>Check</span></a></li>
 <li><a href="#id" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>id</span></a></li>
 <li><a href="#isBaseLayer" class=""><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>is<wbr/>Base<wbr/>Layer</span></a></li>
 <li><a href="#title" class="tsd-is-inherited"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-1024"></use></svg><span>title</span></a></li>
@@ -178,7 +192,8 @@ Defaults to <code>true</code>.</p>
 <li><a href="_open_pioneer_map.WMSLayerConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>WMSLayer<wbr/>Config</span></a></li>
 <li><a href="_open_pioneer_map.WMSLayerConstructor.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>WMSLayer<wbr/>Constructor</span></a></li>
 <li><a href="_open_pioneer_map.WMSSublayerConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-256"></use></svg><span>WMSSublayer<wbr/>Config</span></a></li>
-<li><a href="../types/_open_pioneer_map.InitialViewConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Initial<wbr/>View<wbr/>Config</span></a></li>
+<li><a href="../types/_open_pioneer_map.HealthCheckFunction.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><g id="icon-4194304"><rect fill="var(--color-icon-background)" stroke="var(--color-ts-type-alias)" stroke-width="1.5" x="1" y="1" width="22" height="22" rx="6"></rect><path d="M11.31 16V8.224H8.91V7.24H14.79V8.224H12.39V16H11.31Z" fill="var(--color-text)"></path></g></svg><span>Health<wbr/>Check<wbr/>Function</span></a></li>
+<li><a href="../types/_open_pioneer_map.InitialViewConfig.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Initial<wbr/>View<wbr/>Config</span></a></li>
 <li><a href="../types/_open_pioneer_map.LayerLoadState.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Layer<wbr/>Load<wbr/>State</span></a></li>
 <li><a href="../types/_open_pioneer_map.MapAnchorPosition.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Map<wbr/>Anchor<wbr/>Position</span></a></li>
 <li><a href="../types/_open_pioneer_map.ProjectionDefinition.html"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="#icon-4194304"></use></svg><span>Projection<wbr/>Definition</span></a></li>
