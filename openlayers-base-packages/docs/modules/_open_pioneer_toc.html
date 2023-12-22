@@ -34,7 +34,7 @@ The toolset contains a tool with which you can switch off the visibility of all 
 </code><button>Copy</button></pre>
 <a id="md:layer-ids-as-css-classes-on-list-items" class="tsd-anchor"></a><h3><a href="#md:layer-ids-as-css-classes-on-list-items">Layer IDs as CSS classes on list items</a></h3><p>List items for individual operational layers receive the layer&#39;s <code>id</code> as an additional CSS class (<code>layer-${id}</code>).</p>
 <p>For example, given a layer with the ID <code>test-geojson</code>, the TOC&#39;s list item for that layer is rendered as:</p>
-<pre><code class="language-html"><span class="hl-8">&lt;</span><span class="hl-16">li</span><span class="hl-1"> </span><span class="hl-10">class</span><span class="hl-1">=</span><span class="hl-17">&quot;toc-layer-item layer-test-geojson ...&quot;</span><span class="hl-8">&gt;</span><br/><span class="hl-1">    </span><span class="hl-3">&lt;!-- --&gt;</span><br/><span class="hl-8">&lt;/</span><span class="hl-16">li</span><span class="hl-8">&gt;</span>
+<pre><code class="language-html"><span class="hl-8">&lt;</span><span class="hl-15">li</span><span class="hl-1"> </span><span class="hl-10">class</span><span class="hl-1">=</span><span class="hl-16">&quot;toc-layer-item layer-test-geojson ...&quot;</span><span class="hl-8">&gt;</span><br/><span class="hl-1">    </span><span class="hl-3">&lt;!-- --&gt;</span><br/><span class="hl-8">&lt;/</span><span class="hl-15">li</span><span class="hl-8">&gt;</span>
 </code><button>Copy</button></pre>
 <blockquote>
 <p>NOTE: Non-alphanumeric characters present in the layer&#39;s ID are removed from the class name. Whitespace is replaced with a single <code>-</code>.</p>
