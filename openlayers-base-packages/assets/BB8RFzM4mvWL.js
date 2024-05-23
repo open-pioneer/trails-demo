@@ -1,1 +1,0 @@
-const i=JSON.parse('{"printing-api-app":{},"@open-pioneer/printing":{"title":"Title","fileFormat":"File format","export":"Export","input.placeholder":"Enter title","printingMap":"Map is printing ...","printingFailed":"Failed to print the map."}}');export{i as default};
