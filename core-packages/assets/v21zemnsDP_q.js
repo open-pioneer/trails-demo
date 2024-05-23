@@ -1,0 +1,1 @@
+const e=JSON.parse('{"keycloak-sample":{},"@open-pioneer/authentication-keycloak":{"loginFailed.title":"Login failed","loginFailed.message":"An error occurred during authentication."}}');export{e as default};
