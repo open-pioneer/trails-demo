@@ -1,0 +1,1 @@
+const e=JSON.parse('{"sidebar-app":{"basemapLabel":"Select basemap:"},"@open-pioneer/basemap-switcher":{"emptyBasemapLabel":"Without basemap","layerNotAvailable":"Layer not available","selected":"selected"},"@open-pioneer/experimental-layout-sidebar":{"toggle.expand":"Expand","toggle.collapse":"Collapse"}}');export{e as default};
