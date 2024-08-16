@@ -2,9 +2,9 @@
 <p>A single local storage key (configurable, see <a href="#md:configuration">Configuration</a>) is used to keep track of the application's persistent data.
 Packages using the <code>LocalStorageService</code> can work with arbitrary values (including nested data structures) through a convenient API.</p>
 <blockquote>
-<p>NOTE: The <code>LocalStorageService</code> will read the persistent data from the browser's local storage on application startup.
-Changes to that data made via the <code>LocalStorageService</code> will be reflected in the browser's local storage immediately.
-Concurrent changes made to the browser's local storage <strong>will not</strong> be reflected by the <code>LocalStorageService</code>.
+<p>NOTE: The <code>LocalStorageService</code> reads the persistent data from the browser's local storage on application startup.
+Changes to that data made via the <code>LocalStorageService</code> are reflected in the browser's local storage immediately.
+Concurrent changes made to the browser's local storage <strong>are not</strong> reflected by the <code>LocalStorageService</code>.
 In other words, there is no two-way synchronization between the two systems while the application is running.</p>
 <p>You should not attempt to modify the local storage value managed by the <code>LocalStorageService</code> (see <code>storageId</code> in <a href="#md:configuration">Configuration</a>) through the &quot;raw&quot; Browser APIs while the application is running.
 Other keys are safe to use.</p>
@@ -15,10 +15,10 @@ Use the <code>.isSupported</code> property to check whether local storage can be
 <pre><code class="js"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">storageService</span><span class="hl-1"> = ...; </span><span class="hl-3">// injected</span><br/><span class="hl-5">console</span><span class="hl-1">.</span><span class="hl-6">log</span><span class="hl-1">(</span><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-5">isSupported</span><span class="hl-1">);</span>
 </code><button type="button">Copy</button></pre>
 
-<p>If local storage is not supported, other methods (such as <code>get()</code> and <code>set()</code>) will throw an error.</p>
+<p>If local storage is not supported, other methods (such as <code>get()</code> and <code>set()</code>) throw an error.</p>
 <a id="md:reading-and-writing-values" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Reading and writing values<a href="#md:reading-and-writing-values" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>In its most basic form, you can use the <code>LocalStorageService</code> similar to a map.
-In the background, changes to the service will always be persisted into local storage.</p>
-<p>All keys and values used in the <code>LocalStorageService</code> will be serialized to JSON via <code>JSON.stringify()</code>.
+In the background, changes to the service are always persisted into local storage.</p>
+<p>All keys and values used in the <code>LocalStorageService</code> are serialized to JSON via <code>JSON.stringify()</code>.
 Thus, only values supported by JSON can be used.</p>
 <p>Example:</p>
 <pre><code class="js"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">storageService</span><span class="hl-1"> = ...; </span><span class="hl-3">// injected</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">set</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-7">&quot;bar&quot;</span><span class="hl-1">);</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">set</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">, [</span><span class="hl-7">&quot;array&quot;</span><span class="hl-1">]);</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">set</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">, {</span><br/><span class="hl-1">    </span><span class="hl-5">nested:</span><span class="hl-1"> {</span><br/><span class="hl-1">        </span><span class="hl-5">object:</span><span class="hl-1"> </span><span class="hl-7">&quot;hello world&quot;</span><br/><span class="hl-1">    }</span><br/><span class="hl-1">});</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">get</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">); </span><span class="hl-3">// returns (copy of) previous value</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">remove</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">);</span><br/><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">clear</span><span class="hl-1">();</span>
@@ -26,10 +26,10 @@ Thus, only values supported by JSON can be used.</p>
 
 <a id="md:namespaces" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Namespaces<a href="#md:namespaces" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>You can use the <code>LocalStorageService</code> to manage hierarchical data, including objects and arrays (see above).
 <em>Namespaces</em> can help you treat an object as a group of (nested) properties.
-Getting or setting entries in the namespace will update an object behind the scenes.</p>
+Getting or setting entries in the namespace update an object behind the scenes.</p>
 <p>To use a namespace, call <code>getNamespace(key)</code> on either the <code>LocalStorageService</code> or another <code>LocalStorageNamespace</code> object.
 The <code>key</code> used in <code>getNamespace(key)</code> should either already be associated with an object or it should not be set to a value at all.
-If <code>key</code> is not yet associated with an existing object, a new empty object will be created.</p>
+If <code>key</code> is not yet associated with an existing object, a new empty object is created.</p>
 <p>Example:</p>
 <pre><code class="js"><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">storageService</span><span class="hl-1"> = ...; </span><span class="hl-3">// injected</span><br/><span class="hl-0">const</span><span class="hl-1"> </span><span class="hl-2">namespace</span><span class="hl-1"> = </span><span class="hl-5">storageService</span><span class="hl-1">.</span><span class="hl-6">getNamespace</span><span class="hl-1">(</span><span class="hl-7">&quot;my-key&quot;</span><span class="hl-1">);</span><br/><span class="hl-5">namespace</span><span class="hl-1">.</span><span class="hl-6">set</span><span class="hl-1">(</span><span class="hl-7">&quot;foo&quot;</span><span class="hl-1">, </span><span class="hl-7">&quot;bar&quot;</span><span class="hl-1">); </span><span class="hl-3">// actually sets `&quot;my-key&quot; -&gt; &quot;foo&quot;`</span>
 </code><button type="button">Copy</button></pre>
@@ -41,7 +41,7 @@ For example, you can use your package name as the namespace key:</p>
 </code><button type="button">Copy</button></pre>
 
 <blockquote>
-<p>NOTE: Multiple namespace instances using the same <code>key</code> will manipulate the same object and see each other's effects.</p>
+<p>NOTE: Multiple namespace instances using the same <code>key</code> manipulate the same object and see each other's effects.</p>
 </blockquote>
 <a id="md:configuration" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Configuration<a href="#md:configuration" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><table>
 <thead>
@@ -55,7 +55,7 @@ For example, you can use your package name as the namespace key:</p>
 <tr>
 <td><code>storageId</code></td>
 <td>String</td>
-<td>The key under which the persistent data will be saved. This value should be configured to a reasonably unique value to avoid clashes with other applications at the same origin. Defaults to <code>trails-state</code> (with a warning).</td>
+<td>The key under which the persistent data is saved. This value should be configured to a reasonably unique value to avoid clashes with other applications at the same origin. Defaults to <code>trails-state</code> (with a warning).</td>
 </tr>
 </tbody>
 </table>
