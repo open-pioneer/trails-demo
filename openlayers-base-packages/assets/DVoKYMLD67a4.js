@@ -1,0 +1,1 @@
+import{h as r,o as i,R as c,j as m,g as l,m as f}from"./BeGW3nmX4tO2.js";const x=r(function(e,n){const{className:s,centerContent:a,...t}=i(e),o=c("Container",e);return m.jsx(l.div,{ref:n,className:f("chakra-container",s),...t,__css:{...o,...a&&{display:"flex",flexDirection:"column",alignItems:"center"}}})});x.displayName="Container";export{x as C};
