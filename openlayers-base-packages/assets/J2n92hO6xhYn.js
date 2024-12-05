@@ -1,0 +1,1 @@
+import{h as d,r as a,j as u,b as m}from"./Mxtq6FG0Aq1_.js";const p=d((n,r)=>{const{icon:t,children:o,isRound:l,"aria-label":s,...i}=n,e=t||o,c=a.isValidElement(e)?a.cloneElement(e,{"aria-hidden":!0,focusable:!1}):null;return u.jsx(m,{px:"0",py:"0",borderRadius:l?"full":void 0,ref:r,"aria-label":s,...i,children:c})});p.displayName="IconButton";export{p as I};
