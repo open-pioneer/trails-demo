@@ -30,8 +30,8 @@ The plugin implements the actual authentication flow.</p>
 <p>Provide the current authentication state by implementing <code>getAuthState()</code>.
 When authenticated, a user's authentication state contains session information, such as the user's <code>id</code>,
 an optional display name and arbitrary additional <code>attributes</code> that can be defined by the plugin.</p>
-<p>If the state changes internally (for example successful login, explicit logout, logout due to timeout, etc.),
-the <code>changed</code> event must be emitted to notify the <code>AuthService</code>.</p>
+<p>The state should be implemented based on signals (<code>@conterra/reactivity-core</code>).
+This way, updates to the current state are transported automatically.</p>
 </li>
 <li>
 <p>Return the login behavior value (a React component or a function to call) by implementing <code>getLoginBehavior()</code>.
