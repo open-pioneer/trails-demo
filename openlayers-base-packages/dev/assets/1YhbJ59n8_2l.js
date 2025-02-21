@@ -1,0 +1,1 @@
+const e=JSON.parse('{"printing-api-app":{},"@open-pioneer/printing":{"title":"Titel","fileFormat":"Datei Format","export":"Karte exportieren","input.placeholder":"Titel eingeben","printingMap":"Karte wird gedruckt ...","printingFailed":"Die Karte konnte nicht gedruckt werden."}}');export{e as default};

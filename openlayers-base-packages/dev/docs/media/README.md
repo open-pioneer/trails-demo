@@ -1,0 +1,181 @@
+# @open-pioneer/ogc-features
+
+This package provides utilities to work with OGC API Features services.
+
+## Usage
+
+### Vector source
+
+This vector source should be used together with a vector layer.
+
+Inject the vector source factory by referencing `"ogc-features.VectorSourceFactory"`:
+
+```js
+// build.config.mjs
+import { defineBuildConfig } from "@open-pioneer/build-support";
+
+export default defineBuildConfig({
+    services: {
+        YourService: {
+            // ...
+            references: {
+                vectorSourceFactory: "ogc-features.VectorSourceFactory"
+            }
+        }
+    }
+});
+```
+
+and use it inside a VectorLayer:
+
+```ts
+const vectorSourceFactory = ...; // injected
+const vectorLayer = new VectorLayer({
+    source: vectorSourceFactory.createVectorSource({
+        baseUrl: "https://ogc-api.nrw.de/inspire-us-kindergarten/v1",
+        collectionId: "governmentalservice",
+        crs: "http://www.opengis.net/def/crs/EPSG/0/25832",
+        attributions:
+            "<a href='https://www.govdata.de/dl-de/by-2-0'>Datenlizenz Deutschland - Namensnennung - Version 2.0</a>",
+
+        /** Optional: number of features loaded per request. */
+        limit: 5000,
+
+        /** Optional: passed to the Open Layers Vector Source constructor. */
+        additionalOptions: {},
+    })
+});
+```
+
+Additional options of the `VectorSource` (see [OpenLayers documentation](https://openlayers.org/en/latest/apidoc/module-ol_source_Vector-VectorSource.html)) can be given by the property
+`additionalOptions`.
+
+#### Loading strategies
+
+The vector source supports two different strategies to load features from the server:
+
+-   `"next"`: Fetch large feature results by walking the `next` link of the previous response.
+    This is well supported by most implementations, but can be slow for very large result sets
+    because it does not allow for parallel requests.
+-   `"offset"`: Fetch large feature results using parallel requests.
+    Each request fetches a page of results using an `"offset"` and `"limit"` parameter.
+    This can be much faster than the `"next"` strategy, but it is not supported by all server implementations.
+
+By default, the vector source will attempt to detect the server's capabilities and will prefer `"offset"`, if supported.
+You can overwrite the default behavior by explicitly defining the `strategy` option.
+
+If the `"offset"` strategy is used, you can configure the maximum number of concurrent requests (default: 6).
+
+Example:
+
+```ts
+vectorSourceFactory.createVectorSource({
+    baseUrl: "https://ogc-api.nrw.de/inspire-us-kindergarten/v1",
+    collectionId: "governmentalservice",
+    crs: "http://www.opengis.net/def/crs/EPSG/0/25832",
+
+    strategy: "offset",
+    limit: 2500,
+    maxConcurrentRequests: 6
+});
+```
+
+#### Rewriting request URLs
+
+The optional `rewriteUrl` option can be used to modify the feature requests made by the vector source.
+This is useful, for example, to filter the OGC service on the server side.
+
+Note that modifying the vector source's URL requires some care: existing query parameters should not be overwritten unless you know what you're doing.
+The vector source may add additional query parameters in the future, which might conflict the changes done by custom `rewriteUrl` implementations.
+
+Example:
+
+```ts
+vectorSourceFactory.createVectorSource({
+    baseUrl: "https://ogc-api.nrw.de/inspire-us-kindergarten/v1",
+    collectionId: "governmentalservice",
+    crs: "http://www.opengis.net/def/crs/EPSG/0/25832",
+
+    rewriteUrl(url) {
+        url.searchParams.set("property", "value");
+        return url;
+    }
+});
+```
+
+### Search source
+
+This search source is used to search in OGC API features.
+
+Inject the search source factory by referencing `"ogc-features.SearchSourceFactory"`:
+
+```js
+// build.config.mjs
+import { defineBuildConfig } from "@open-pioneer/build-support";
+
+export default defineBuildConfig({
+    services: {
+        YourService: {
+            // ...
+            references: {
+                ogcSearchSourceFactory: "ogc-features.SearchSourceFactory"
+            }
+        }
+    }
+});
+```
+
+and create a search source instance:
+
+```ts
+const ogcSearchSourceFactory = ...; // injected
+const searchSource = ogcSearchSourceFactory.createSearchSource({
+    label: this.intl.formatMessage({ id: "searchSources.lika" }),
+    baseUrl: "https://ogc-api.nrw.de/lika/v1",
+    collectionId: "flurstueck",
+    searchProperty: "flurstid",
+    labelProperty: "objid"
+});
+```
+
+Use the callback function `renderLabel` to create a custom label for the result.
+
+```ts
+searchSourceFactory.createSearchSource({
+    // ...
+    renderLabel(feature) {
+        const tntxt = feature?.properties?.tntxt;
+        const id = feature?.id;
+        if (typeof tntxt === "string") {
+            return tntxt + " (" + id + ")";
+        } else {
+            return String(id);
+        }
+    }
+    // ...
+});
+```
+
+The label is generated by one of the following methods, weighted by order:
+
+1. `renderLabel` function
+2. `labelProperty`
+3. `searchProperty`
+
+To overwrite the service URL, use the callback function `rewriteUrl`.
+This is useful, for example, to return only a specific attribute in the response, as in the following example:
+
+```ts
+searchSourceFactory.createSearchSource({
+    // ...
+    rewriteUrl(url) {
+        url.searchParams.set("properties", "objid");
+        return url;
+    }
+    // ...
+});
+```
+
+## License
+
+Apache-2.0 (see `LICENSE` file)
