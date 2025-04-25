@@ -1,0 +1,1 @@
+const e=JSON.parse('{"notify-app":{},"@open-pioneer/notifier":{"regionLabel":"Benachrichtigungen","notification.close":"Benachrichtigung schließen"},"@open-pioneer/chakra-snippets":{"clipboard.copy":"kopieren","clipboard.copied":"kopiert","close-button.ariaLabel":"Schließen"}}');export{e as default};
