@@ -1,0 +1,1 @@
+import{r as c,j,t as p}from"./ddveSmc4OMQC.js";const m=c.forwardRef(function(s,e){const{direction:i,align:r,justify:t,wrap:n,basis:a,grow:l,shrink:x,inline:f,...o}=s;return j.jsx(p.div,{ref:e,...o,css:{display:f?"inline-flex":"flex",flexDirection:i,alignItems:r,justifyContent:t,flexWrap:n,flexBasis:a,flexGrow:l,flexShrink:x,...s.css}})});export{m as F};
