@@ -21,11 +21,11 @@ The <code>MapContainer</code> fills the entire available space.</p>
 <p>The component itself uses the map registry service to create the map using the provided <code>map</code>.</p>
 <h4 id="changing-the-map-views-padding" class="tsd-anchor-link">Changing the map view's padding<a href="#changing-the-map-views-padding" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>The MapContainer provides a prop <code>viewPadding</code> that allows to set the map's view padding
 (see <a href="https://openlayers.org/en/latest/apidoc/module-ol_View-View.html#padding">padding property on OL View</a>).
-This prop musst be used to set the views padding instead of directly setting the padding on the
-OL map's view to ensure that map anchor are positioned correctly.</p>
+This prop must be used to set the view's padding instead of directly setting the padding on the
+OL map's view to ensure that map anchors are positioned correctly.</p>
 <p>Additionally, using the prop <code>viewPaddingChangeBehavior</code> it is possible to specify how the map behaves when the view padding changes.
-Possible values are <code>none</code> (no nothing), <code>preserve-center</code>(ensures that the center point remains the same
-by animating the view) and <code>preserve-extent</code> ´(ensures that the extent remains the same by zooming).</p>
+Possible values are <code>none</code> (do nothing), <code>preserve-center</code> (ensures that the center point remains the same
+by animating the view) and <code>preserve-extent</code> (ensures that the extent remains the same by zooming).</p>
 <h3 id="map-anchor-component" class="tsd-anchor-link">Map anchor component<a href="#map-anchor-component" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3><p>To pass custom React components onto the map, the following anchor-points are provided:</p>
 <ul>
 <li><code>top-left</code></li>
