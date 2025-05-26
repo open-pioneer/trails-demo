@@ -1,0 +1,1 @@
+const e=JSON.parse('{"auth-app":{},"@open-pioneer/authentication":{"auth-error":"Bei der Authentifizierung ist ein Fehler aufgetreten."},"@open-pioneer/chakra-snippets":{"clipboard.copy":"kopieren","clipboard.copied":"kopiert","close-button.ariaLabel":"Schließen"}}');export{e as default};
