@@ -1,1 +1,0 @@
-import{aQ as e}from"./D59LS_soWs8r.js";const a=e("div",{base:{display:"flex",alignItems:"center",justifyContent:"center"},variants:{inline:{true:{display:"inline-flex"}}}});a.displayName="Center";export{a as C};
