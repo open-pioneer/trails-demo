@@ -1,1 +1,0 @@
-const e=JSON.parse('{"map-anchors-app":{},"@open-pioneer/map":{"attribution.label":"Attributions"},"@open-pioneer/chakra-snippets":{"clipboard.copy":"copy","clipboard.copied":"copied","close-button.ariaLabel":"Close"}}');export{e as default};
