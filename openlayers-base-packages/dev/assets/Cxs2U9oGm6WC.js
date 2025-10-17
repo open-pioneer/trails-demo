@@ -1,1 +1,0 @@
-import{cE as s,cF as o}from"./D5mkNEVvoErv.js";const c=o();class a extends s{constructor(r,t,e){e||c(),super(r,t,e)}get type(){return"simple"}get legend(){}get layers(){}get sublayers(){}}const n=a;export{n as S};
