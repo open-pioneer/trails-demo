@@ -1,0 +1,1 @@
+import{d as o,W as r,j as n,t as i,x as l}from"./CCtaPhPm77yx.js";const{useRecipeResult:x}=r({key:"icon"}),m=o.forwardRef(function(s,e){const{styles:a,className:c,props:t}=x({asChild:!s.as,...s});return n.jsx(i.svg,{ref:e,focusable:!1,"aria-hidden":"true",...t,css:[a,s.css],className:l(c,s.className)})});export{m as I};
