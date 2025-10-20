@@ -1,0 +1,1 @@
+import{cE as s,cF as o}from"./CS41NuAbmcvV.js";const c=o();class a extends s{constructor(r,t,e){e||c(),super(r,t,e)}get type(){return"simple"}get legend(){}get layers(){}get sublayers(){}}const n=a;export{n as S};
