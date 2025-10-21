@@ -1,1 +1,0 @@
-import{r as e}from"./DHZYuubHe9Sg.js";function l(n,t=[]){const r=e.useRef(()=>{throw new Error("Cannot call an event handler while rendering.")});return e.useInsertionEffect(()=>{r.current=n}),e.useCallback((...a)=>r.current?.(...a),t)}export{l as u};
