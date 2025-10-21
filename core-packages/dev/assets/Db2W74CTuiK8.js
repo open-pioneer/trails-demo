@@ -1,1 +1,0 @@
-import{d as n,j as r}from"./CCtaPhPm77yx.js";import{B as s}from"./B2sq5XHJLf5B.js";const c=n.forwardRef(function(o,t){return r.jsx(s,{px:"0",py:"0",_icon:{fontSize:"1.2em"},ref:t,...o})});export{c as I};
