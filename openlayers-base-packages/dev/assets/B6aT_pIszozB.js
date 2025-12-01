@@ -1,0 +1,1 @@
+const o=JSON.parse('{"highlight-and-zoom-app":{},"@open-pioneer/chakra-snippets":{"clipboard.copy":"copy","clipboard.copied":"copied","close-button.ariaLabel":"Close"},"@open-pioneer/map":{"attribution.label":"Attributions"}}');export{o as default};
