@@ -1,1 +1,0 @@
-import{d as c}from"./BN2CD-Wc02Xb.js";function f(e,r={}){const{sync:n=!1}=r,t=s(e);return c.useCallback((...u)=>n?queueMicrotask(()=>t.current?.(...u)):t.current?.(...u),[n,t])}function s(e){const r=c.useRef(e);return r.current=e,r}export{f as u};
