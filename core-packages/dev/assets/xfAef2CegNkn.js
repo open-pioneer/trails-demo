@@ -1,1 +1,0 @@
-import{d as c,j as d,l as p}from"./IWibbpt-Terg.js";const j=c.forwardRef(function(s,e){const{direction:i,align:r,justify:n,wrap:t,basis:a,grow:l,shrink:x,inline:f,...o}=s;return d.jsx(p.div,{ref:e,...o,css:{display:f?"inline-flex":"flex",flexDirection:i,alignItems:r,justifyContent:n,flexWrap:t,flexBasis:a,flexGrow:l,flexShrink:x,...s.css}})});j.displayName="Flex";export{j as F};
