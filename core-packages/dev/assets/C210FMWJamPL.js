@@ -1,0 +1,1 @@
+import{k as e,j as o,M as s}from"./IWibbpt-Terg.js";const{withProvider:a,withContext:t}=e({key:"tag"}),r=a("div","root"),l=t("span","label"),c=t("button","closeTrigger",{defaultProps:{children:o.jsx(s,{})}});t("span","startElement");const i=t("span","endElement");export{r as T,l as a,i as b,c};

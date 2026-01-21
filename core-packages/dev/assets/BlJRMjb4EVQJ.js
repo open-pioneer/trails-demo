@@ -1,0 +1,1 @@
+import{d as c,D as i,a9 as p,j as d,l as u}from"./IWibbpt-Terg.js";const f=c.forwardRef(function({unstyled:r,...s},a){const t=i({key:"inputAddon",recipe:s.recipe}),[e,n]=t.splitVariantProps(s),o=r?p:t(e);return d.jsx(u.div,{ref:a,...n,css:[o,s.css]})});export{f as I};
