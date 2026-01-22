@@ -1,0 +1,1 @@
+import{e}from"./B_d22KN7EUZg.js";const[o,i]=e({name:"FieldsetContext",hookName:"useFieldsetContext",providerName:"<FieldsetProvider />",strict:!1}),[s,r]=e({name:"FieldContext",hookName:"useFieldContext",providerName:"<FieldProvider />",strict:!1});export{s as F,i as a,r as u};
