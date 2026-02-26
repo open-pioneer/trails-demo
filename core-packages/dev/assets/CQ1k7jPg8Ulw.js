@@ -1,0 +1,1 @@
+import{d as c,j as d,e as p}from"./OxIqoxGUA_04.js";const j=c.forwardRef(function(e,s){const{direction:i,align:r,justify:n,wrap:t,basis:a,grow:l,shrink:x,inline:f,...o}=e;return d.jsx(p.div,{ref:s,...o,css:{display:f?"inline-flex":"flex",flexDirection:i,alignItems:r,justifyContent:n,flexWrap:t,flexBasis:a,flexGrow:l,flexShrink:x,...e.css}})});j.displayName="Flex";export{j as F};
