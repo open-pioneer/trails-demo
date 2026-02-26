@@ -1,0 +1,1 @@
+import{d as e}from"./VPRouPygZacR.js";import{a as s}from"./Bke37kmxm-A8.js";function u(r,t=[]){const n=e.useRef(()=>{throw new Error("Cannot call an event handler while rendering.")});return e.useInsertionEffect(()=>{n.current=r}),e.useCallback((...a)=>n.current?.(...a),t)}const o="@open-pioneer/chakra-snippets",i=s.bind(void 0,o);export{i as a,u};

@@ -1,1 +1,0 @@
-import{d as p,l as n,j as a,ac as i}from"./OxIqoxGUA_04.js";import{a as m}from"./CDRQRRRaZior.js";import{u}from"./DiifI-DGFogC.js";const t=p.forwardRef((e,o)=>{const r=u(),s=n(r?.getInputProps(),e);return a.jsx(m.input,{...s,ref:o})});t.displayName="FieldInput";const{withContext:c}=i({key:"input"}),l=c(t);export{l as I};
