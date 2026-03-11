@@ -1,0 +1,1 @@
+import{d as c,O as i,ai as p,j as d,e as u}from"./C9_ovjHgYL-k.js";const l=c.forwardRef(function({unstyled:e,...s},r){const t=i({key:"inputAddon",recipe:s.recipe}),[a,n]=t.splitVariantProps(s),o=e?p:t(a);return d.jsx(u.div,{ref:r,...n,css:[o,s.css]})});export{l as I};

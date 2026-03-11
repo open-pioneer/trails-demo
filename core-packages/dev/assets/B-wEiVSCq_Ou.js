@@ -1,0 +1,1 @@
+import{d as n,j as r}from"./C9_ovjHgYL-k.js";import{B as s}from"./Co3zD6l5CBVE.js";const a=n.forwardRef(function(o,t){return r.jsx(s,{px:"0",py:"0",_icon:{fontSize:"1.2em"},ref:t,...o})});a.displayName="IconButton";export{a as I};
