@@ -1,1 +1,0 @@
-import{s as e,j as s,L as o}from"./B9GrK7B1N6Bv.js";const{withProvider:a,withContext:t}=e({key:"tag"}),r=a("div","root"),l=t("span","label"),c=t("button","closeTrigger",{defaultProps:{children:s.jsx(o,{})}});t("span","startElement");const i=t("span","endElement");export{r as T,l as a,i as b,c};
