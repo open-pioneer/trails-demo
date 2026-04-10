@@ -1,1 +1,0 @@
-import{i as e}from"./D_i2PG74AOsa.js";const i=e("div",{base:{display:"flex",alignItems:"center",justifyContent:"center"},variants:{inline:{true:{display:"inline-flex"}}}});i.displayName="Center";export{i as C};
