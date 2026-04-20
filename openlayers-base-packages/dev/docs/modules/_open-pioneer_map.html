@@ -37,7 +37,7 @@ Possible values are <code>none</code> (do nothing), <code>preserve-center</code>
 by animating the view) and <code>preserve-extent</code> (ensures that the extent remains the same by zooming).</p>
 <p>By default, the focus outline of the map container also respects the view padding.
 If you want to disable the focus outline, you can use the following css style:</p>
-<pre><code class="css"><span class="hl-14">.map-container-root:has</span><span class="hl-2">(&gt; </span><span class="hl-14">.map-container:focus-visible</span><span class="hl-2">) </span><span class="hl-14">.map-anchors::after</span><span class="hl-2"> {</span><br/><span class="hl-2">    </span><span class="hl-3">outline</span><span class="hl-2">: </span><span class="hl-15">none</span><span class="hl-2">;</span><br/><span class="hl-2">}</span>
+<pre><code class="css"><span class="hl-15">.map-container-root:has</span><span class="hl-2">(&gt; </span><span class="hl-15">.map-container:focus-visible</span><span class="hl-2">) </span><span class="hl-15">.map-anchors::after</span><span class="hl-2"> {</span><br/><span class="hl-2">    </span><span class="hl-3">outline</span><span class="hl-2">: </span><span class="hl-16">none</span><span class="hl-2">;</span><br/><span class="hl-2">}</span>
 </code><button type="button">Copy</button></pre>
 
 <p>In this case, you will need to create an appropriate focus outline style for the map container yourself.</p>
