@@ -13,6 +13,7 @@ It supports creating, modifying, and deleting features with declarative form con
 <li><strong>Undo/redo</strong>: Built-in support for geometry editing history</li>
 </ul>
 <p>The Editing works with all vector layer sources and can therefore be used with any layer type that supports feature selection, such as <code>GeoJSON</code>, <code>WFS</code>, or <code>OGC API Features</code>.
+To save feature edits, a <code>FeatureWriter</code> (<a href="#FeatureWriter">see below</a>) has to be implemented.
 As the package does not manage feature storage or how changes are applied to the map, it fits a wide range of data management strategies and provides full flexibility to the using app.</p>
 <h2 id="usage" class="tsd-anchor-link">Usage<a href="#usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>The simplest way to use the FeatureEditor is to provide feature templates and a <code>writer</code> implementation:</p>
@@ -68,6 +69,7 @@ The feature writer ensures that:
 <h3 id="featurewriter" class="tsd-anchor-link">FeatureWriter<a href="#featurewriter" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <p>The editor does not manage the lifetime of any features in the map, except for the feature currently being edited.
 To persist changes made by the editor, you must implement the <code>FeatureWriter</code> interface.</p>
+<p>Note: there is currently no prepared FeatureWriter implementation for <code>WFS</code> or <code>OGC API Features</code> services available.</p>
 <p>The interface is flexible enough to work in many scenarios:</p>
 <ul>
 <li>Transient client side state (e.g. an in-memory collection used for a <code>VectorSource</code>)</li>
