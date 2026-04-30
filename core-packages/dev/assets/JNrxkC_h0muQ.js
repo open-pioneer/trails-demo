@@ -1,0 +1,1 @@
+import{d as x,j as e}from"./BYg9m3g8cEkj.js";import{F as n,a as c,b as F,c as p,d as j}from"./BPoyRY63auk8.js";const T=x.forwardRef(function(t,i){const{label:r,children:o,helperText:s,errorText:l,optionalText:a,...d}=t;return e.jsxs(n,{ref:i,...d,children:[r&&e.jsxs(c,{children:[r,e.jsx(F,{fallback:a})]}),o,s&&e.jsx(p,{children:s}),l&&e.jsx(j,{children:l})]})});export{T as F};
