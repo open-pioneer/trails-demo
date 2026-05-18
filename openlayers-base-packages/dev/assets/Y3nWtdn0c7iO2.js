@@ -1,0 +1,1 @@
+import{Kr as e,ao as t,ro as n,wo as r}from"./CK_WiCXYBicy.js";var i=n(),a=(0,r(t(),1).forwardRef)(function(t,n){return(0,i.jsx)(e,{align:`center`,...t,direction:`row`,ref:n})});a.displayName=`HStack`;export{a as t};

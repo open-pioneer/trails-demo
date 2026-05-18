@@ -1,0 +1,1 @@
+import{wa as e}from"./CK_WiCXYBicy.js";import{u as t}from"./BfXrxUVObVFD.js";var[n,r]=e({name:`RenderStrategyContext`,hookName:`useRenderStrategyContext`,providerName:`<RenderStrategyPropsProvider />`}),i=e=>t()(e,[`lazyMount`,`unmountOnExit`]);export{i as n,r,n as t};

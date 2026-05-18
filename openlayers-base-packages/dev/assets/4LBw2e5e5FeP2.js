@@ -1,0 +1,1 @@
+import{ao as e,ro as t,wo as n}from"./CK_WiCXYBicy.js";import{a as r,i,n as a,r as o,t as s}from"./CBaBm_ePU08X.js";var c=t(),l=n(e(),1).forwardRef(function(e,t){let{icon:n,children:l,inputProps:u,rootRef:d,...f}=e;return(0,c.jsxs)(r,{ref:d,...f,children:[(0,c.jsx)(a,{ref:t,...u}),(0,c.jsx)(s,{children:n||(0,c.jsx)(o,{})}),l!=null&&(0,c.jsx)(i,{children:l})]})});export{l as t};
