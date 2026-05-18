@@ -1,1 +1,0 @@
-import{bE as t}from"./CxXFiIBuYXZ9.js";import{k as r}from"./BtWttg-dtrwr.js";const[n,s]=t({name:"RenderStrategyContext",hookName:"useRenderStrategyContext",providerName:"<RenderStrategyPropsProvider />"}),p=e=>r()(e,["lazyMount","unmountOnExit"]);export{n as R,p as s,s as u};
