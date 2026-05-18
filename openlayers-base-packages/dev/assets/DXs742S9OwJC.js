@@ -1,1 +1,0 @@
-import{e9 as a,dt as o}from"./DQBtciAz3prm.js";import{d as i,a as h,C,b,c as d}from"./4MmxhCampKld.js";const l=a.forwardRef(function(r,s){const{icon:t,children:e,inputProps:c,rootRef:n,...x}=r;return o.jsxs(i,{ref:n,...x,children:[o.jsx(h,{ref:s,...c}),o.jsx(C,{children:t||o.jsx(b,{})}),e!=null&&o.jsx(d,{children:e})]})});export{l as C};

@@ -1,0 +1,1 @@
+import{e9 as a,dt as o}from"./dxff3d9jXF07.js";import{d as i,a as h,C,b,c as d}from"./DhL6nKOIa3aa.js";const l=a.forwardRef(function(r,s){const{icon:t,children:e,inputProps:c,rootRef:n,...x}=r;return o.jsxs(i,{ref:n,...x,children:[o.jsx(h,{ref:s,...c}),o.jsx(C,{children:t||o.jsx(b,{})}),e!=null&&o.jsx(d,{children:e})]})});export{l as C};
