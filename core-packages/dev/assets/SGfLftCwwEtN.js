@@ -1,1 +1,0 @@
-import{m as a,d as c}from"./BYg9m3g8cEkj.js";var n=new WeakMap;function i(t){return n.has(t)||n.set(t,a(t).getComputedStyle(t)),n.get(t)}function p(t,e={}){const{sync:u=!1}=e,r=o(t);return c.useCallback((...s)=>u?queueMicrotask(()=>r.current?.(...s)):r.current?.(...s),[u,r])}function o(t){const e=c.useRef(t);return e.current=t,e}export{i as g,p as u};
