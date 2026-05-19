@@ -1,1 +1,0 @@
-var e=()=>(e,t)=>t.reduce((e,t)=>{let[n,r]=e,i=t;return r[i]!==void 0&&(n[i]=r[i]),delete r[i],[n,r]},[{},{...e}]);export{e as t};

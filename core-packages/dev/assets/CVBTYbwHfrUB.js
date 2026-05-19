@@ -1,1 +1,0 @@
-import{At as e,Cn as t,Fn as n}from"./CqTCg09TSe8q.js";var r=new WeakMap;function i(t){return r.has(t)||r.set(t,e(t).getComputedStyle(t)),r.get(t)}var a=n(t(),1);function o(e,t={}){let{sync:n=!1}=t,r=s(e);return(0,a.useCallback)((...e)=>n?queueMicrotask(()=>r.current?.(...e)):r.current?.(...e),[n,r])}function s(e){let t=(0,a.useRef)(e);return t.current=e,t}export{i as n,o as t};
