@@ -1,0 +1,1 @@
+import{Bo as e,Qr as t,Ro as n,as as r}from"./DJnX-RGbH2on.js";var i=n(),a=(0,r(e(),1).forwardRef)(function(e,n){return(0,i.jsx)(t,{align:`center`,...e,direction:`row`,ref:n})});a.displayName=`HStack`;export{a as t};
