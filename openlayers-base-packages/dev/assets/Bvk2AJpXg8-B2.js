@@ -1,1 +1,0 @@
-import{Za as e,ao as t,eo as n,ro as r,wo as i}from"./CK_WiCXYBicy.js";var a=r(),o=(0,i(t(),1).forwardRef)(function(t,r){let{align:i,fit:o=`cover`,...s}=t;return(0,a.jsx)(e.img,{ref:r,objectFit:o,objectPosition:i,className:n(`chakra-image`,t.className),...s})});o.displayName=`Image`;export{o as t};
