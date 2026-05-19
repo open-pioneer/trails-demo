@@ -1,1 +1,0 @@
-import{Bo as e,Fo as t,Mo as n,Ro as r,as as i}from"./DJnX-RGbH2on.js";var a=r(),o=(0,i(e(),1).forwardRef)(function(e,r){let{align:i,fit:o=`cover`,...s}=e;return(0,a.jsx)(n.img,{ref:r,objectFit:o,objectPosition:i,className:t(`chakra-image`,e.className),...s})});o.displayName=`Image`;export{o as t};

@@ -1,1 +1,0 @@
-import{Mo as e}from"./DJnX-RGbH2on.js";var t=e(`div`,{base:{display:`flex`,alignItems:`center`,justifyContent:`center`},variants:{inline:{true:{display:`inline-flex`}}}});t.displayName=`Center`;export{t};
