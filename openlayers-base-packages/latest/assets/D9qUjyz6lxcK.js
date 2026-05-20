@@ -1,0 +1,1 @@
+var e=JSON.parse(`{"overlay-map":{},"@open-pioneer/map":{"attribution.label":"Quellenangaben"},"@open-pioneer/chakra-snippets":{"clipboard.copy":"kopieren","clipboard.copied":"kopiert","close-button.ariaLabel":"Schließen","carousel.next":"Weiter","carousel.prev":"Zurück","password-input.triggerAriaLabel":"Passwortsichtbarkeit umschalten"}}`);export{e as default};
