@@ -1,0 +1,1 @@
+import{Vo as e,os as t,zo as n}from"./DF2atFuU5aDe.js";import{a as r,i,n as a,r as o,t as s}from"./CZiwXL_C11gC.js";var c=n(),l=t(e(),1).forwardRef(function(e,t){let{icon:n,children:l,inputProps:u,rootRef:d,...f}=e;return(0,c.jsxs)(r,{ref:d,...f,children:[(0,c.jsx)(a,{ref:t,...u}),(0,c.jsx)(s,{children:n||(0,c.jsx)(o,{})}),l!=null&&(0,c.jsx)(i,{children:l})]})});export{l as t};
