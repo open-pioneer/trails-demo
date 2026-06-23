@@ -1,0 +1,1 @@
+import{$r as e,Vo as t,os as n,zo as r}from"./NGmKognWeVQB.js";var i=r(),a=(0,n(t(),1).forwardRef)(function(t,n){return(0,i.jsx)(e,{align:`center`,...t,direction:`row`,ref:n})});a.displayName=`HStack`;export{a as t};
