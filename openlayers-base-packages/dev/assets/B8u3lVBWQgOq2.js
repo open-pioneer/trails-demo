@@ -1,1 +1,0 @@
-import{Io as e,No as t,Vo as n,os as r,zo as i}from"./Xb-4f6ComRMs.js";var a=i(),o=(0,r(n(),1).forwardRef)(function(n,r){let{align:i,fit:o=`cover`,...s}=n;return(0,a.jsx)(t.img,{ref:r,objectFit:o,objectPosition:i,className:e(`chakra-image`,n.className),...s})});o.displayName=`Image`;export{o as t};
