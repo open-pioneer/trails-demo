@@ -18,7 +18,7 @@ The overlay renders a react node at the specified coordinates.</p>
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">Overlay</span> <span class="tsd-signature-symbol">{</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#contentcontent">content</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#currentcoordinatecurrentcoordinate">currentCoordinate</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Coordinate</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#destroy-1">destroy</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#elementelement">element</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#id">id</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#isdestroyedisdestroyed">isDestroyed</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#offsetoffset">offset</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#oloverlay">olOverlay</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Overlay</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#positionposition">position</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.OverlayPosition.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPosition</a><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#positioningpositioning">positioning</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.OverlayPositioning.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPositioning</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#setcontent-1">setContent</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">content</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ReactNode</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#setoffset-1">setOffset</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">offset</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#setposition-1">setPosition</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">position</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Coordinate</span> <span class="tsd-signature-symbol">|</span> <a href="../types/_open-pioneer_map.OverlayPosition.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPosition</a> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">&quot;follow-pointer&quot;</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#setpositioning-1">setPositioning</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">positioning</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.OverlayPositioning.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPositioning</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#tag">tag</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L230">src/packages/map/model/Overlays.ts:230</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L230">src/packages/map/model/Overlays.ts:230</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -61,7 +61,7 @@ The overlay renders a react node at the specified coordinates.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">ReactNode</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L385">src/packages/map/model/Overlays.ts:385</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L385">src/packages/map/model/Overlays.ts:385</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="currentcoordinate"><span>current<wbr/>Coordinate</span><a href="#currentcoordinate" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -78,7 +78,7 @@ the same as <code>position.coordinate</code>.</li>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Coordinate</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L378">src/packages/map/model/Overlays.ts:378</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L378">src/packages/map/model/Overlays.ts:378</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="element"><span>element</span><a href="#element" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -89,7 +89,7 @@ the same as <code>position.coordinate</code>.</li>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L392">src/packages/map/model/Overlays.ts:392</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L392">src/packages/map/model/Overlays.ts:392</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="isdestroyed"><span>is<wbr/>Destroyed</span><a href="#isdestroyed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -100,7 +100,7 @@ the same as <code>position.coordinate</code>.</li>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L365">src/packages/map/model/Overlays.ts:365</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L365">src/packages/map/model/Overlays.ts:365</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="offset"><span>offset</span><a href="#offset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -112,7 +112,7 @@ the same as <code>position.coordinate</code>.</li>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L401">src/packages/map/model/Overlays.ts:401</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L401">src/packages/map/model/Overlays.ts:401</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="position"><span>position</span><a href="#position" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -129,7 +129,7 @@ as the input to the setter (or constructor) due to normalization.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="../types/_open-pioneer_map.OverlayPosition.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPosition</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L414">src/packages/map/model/Overlays.ts:414</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L414">src/packages/map/model/Overlays.ts:414</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="positioning"><span>positioning</span><a href="#positioning" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -140,7 +140,7 @@ as the input to the setter (or constructor) due to normalization.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="../types/_open-pioneer_map.OverlayPositioning.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPositioning</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L421">src/packages/map/model/Overlays.ts:421</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L421">src/packages/map/model/Overlays.ts:421</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -155,7 +155,7 @@ An overlay that is destroyed cannot be added to the map again.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L349">src/packages/map/model/Overlays.ts:349</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L349">src/packages/map/model/Overlays.ts:349</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setcontent"><span>set<wbr/>Content</span><a href="#setcontent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -170,7 +170,7 @@ An overlay that is destroyed cannot be added to the map again.</p>
 <li><span><span class="tsd-kind-parameter">content</span>: <span class="tsd-signature-type">ReactNode</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L428">src/packages/map/model/Overlays.ts:428</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L428">src/packages/map/model/Overlays.ts:428</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setoffset"><span>set<wbr/>Offset</span><a href="#setoffset" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -186,7 +186,7 @@ The first element in the array is the horizontal offset.</p>
 <li><span><span class="tsd-kind-parameter">offset</span>: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L466">src/packages/map/model/Overlays.ts:466</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L466">src/packages/map/model/Overlays.ts:466</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setposition"><span>set<wbr/>Position</span><a href="#setposition" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -209,7 +209,7 @@ that are the result of this configuration.</p>
 <h4 class="tsd-anchor-link" id="see">See<a href="#see" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p><a href="../types/_open-pioneer_map.OverlayPosition.html" class="tsd-kind-type-alias">OverlayPosition</a></p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L443">src/packages/map/model/Overlays.ts:443</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L443">src/packages/map/model/Overlays.ts:443</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setpositioning"><span>set<wbr/>Positioning</span><a href="#setpositioning" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -224,7 +224,7 @@ that are the result of this configuration.</p>
 <li><span><span class="tsd-kind-parameter">positioning</span>: <a href="../types/_open-pioneer_map.OverlayPositioning.html" class="tsd-signature-type tsd-kind-type-alias">OverlayPositioning</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L473">src/packages/map/model/Overlays.ts:473</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L473">src/packages/map/model/Overlays.ts:473</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -235,7 +235,7 @@ that are the result of this configuration.</p>
 <p>Automatically assigned when the overlay is created. Use the <code>tag</code> property for custom identifiers.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L236">src/packages/map/model/Overlays.ts:236</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L236">src/packages/map/model/Overlays.ts:236</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="oloverlay"><code class="tsd-tag">Readonly</code><span>ol<wbr/>Overlay</span><a href="#oloverlay" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">olOverlay</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Overlay</span></div>
@@ -247,14 +247,14 @@ that are the result of this configuration.</p>
 <h4 class="tsd-anchor-link" id="see-1">See<a href="#see-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p><a href="https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html">https://openlayers.org/en/latest/apidoc/module-ol_Overlay-Overlay.html</a></p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L250">src/packages/map/model/Overlays.ts:250</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L250">src/packages/map/model/Overlays.ts:250</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="tag"><code class="tsd-tag">Readonly</code><span>tag</span><a href="#tag" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">tag</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></div>
 <div class="tsd-comment tsd-typography"><p>Optional, readonly tag that helps identifying the overlay instance.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/map/model/Overlays.ts#L241">src/packages/map/model/Overlays.ts:241</a></li></ul></aside></section></section></details></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/map/model/Overlays.ts#L241">src/packages/map/model/Overlays.ts:241</a></li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">

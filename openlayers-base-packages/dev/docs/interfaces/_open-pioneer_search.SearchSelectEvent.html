@@ -14,9 +14,9 @@
 <section class="tsd-panel tsd-comment">
 <div class="tsd-comment tsd-typography"><p>Event type emitted when the user selects an item.</p>
 </div></section>
-<div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">SearchSelectEvent</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#result">result</a><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_search.SearchResult.html" class="tsd-signature-type tsd-kind-interface">SearchResult</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#source">source</a><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_search.SearchSource.html" class="tsd-signature-type tsd-kind-interface">SearchSource</a><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
+<div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">SearchSelectEvent</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#result">result</a><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_search.SearchResult.html" class="tsd-signature-type tsd-kind-interface">SearchResult</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#source">source</a><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_search.SearchSource.html" class="tsd-signature-type tsd-kind-interface">SearchSource</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#trigger">trigger</a><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_search.SearchSelectTrigger.html" class="tsd-signature-type tsd-kind-type-alias">SearchSelectTrigger</a><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/search/api.ts#L104">src/packages/search/api.ts:104</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/search/api.ts#L104">src/packages/search/api.ts:104</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -26,6 +26,7 @@
 <h3 class="tsd-index-heading tsd-anchor-link" id="properties">Properties<a href="#properties" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-index-list"><a href="#result" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>result</span></a>
 <a href="#source" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>source</span></a>
+<a href="#trigger" class="tsd-index-link"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>trigger</span></a>
 </div></section></div></details></section></section>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="properties-1">Properties<a href="#properties-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
@@ -36,14 +37,22 @@
 <div class="tsd-comment tsd-typography"><p>The search result selected by the user.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/search/api.ts#L109">src/packages/search/api.ts:109</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/search/api.ts#L109">src/packages/search/api.ts:109</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="source"><span>source</span><a href="#source" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">source</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_search.SearchSource.html" class="tsd-signature-type tsd-kind-interface">SearchSource</a></div>
 <div class="tsd-comment tsd-typography"><p>The source that returned the <a href="#result" class="tsd-kind-property">result</a>.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/195a0dcedccd558f259db94db6d164231e497152/src/packages/search/api.ts#L106">src/packages/search/api.ts:106</a></li></ul></aside></section></section></details></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/search/api.ts#L106">src/packages/search/api.ts:106</a></li></ul></aside></section>
+<section class="tsd-panel tsd-member">
+<h3 class="tsd-anchor-link" id="trigger"><span>trigger</span><a href="#trigger" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
+<div class="tsd-signature"><span class="tsd-kind-property">trigger</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_search.SearchSelectTrigger.html" class="tsd-signature-type tsd-kind-type-alias">SearchSelectTrigger</a></div>
+<div class="tsd-comment tsd-typography"><p>Specifies the trigger that caused the select event.
+It can be triggered by the user or through <a href="_open-pioneer_search.SearchApi.html#searchandselect" class="tsd-kind-method">SearchApi.searchAndSelect</a>.</p>
+</div><aside class="tsd-sources">
+<ul>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/0b9143d9bcae1edc53d969c96be53e9ec2357d1e/src/packages/search/api.ts#L115">src/packages/search/api.ts:115</a></li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
@@ -60,7 +69,7 @@
 <h3>On This Page</h3></summary>
 <div class="tsd-accordion-details">
 <details open class="tsd-accordion tsd-page-navigation-section"><summary class="tsd-accordion-summary" data-key="section-Properties"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>Properties</summary>
-<div><a href="#result"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>result</span></a><a href="#source"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>source</span></a></div></details></div></details></div>
+<div><a href="#result"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>result</span></a><a href="#source"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>source</span></a><a href="#trigger"><svg class="tsd-kind-icon" viewBox="0 0 24 24" aria-label="Property"><use href="../assets/icons.svg#icon-1024"></use></svg><span>trigger</span></a></div></details></div></details></div>
 <div class="site-menu">
 <nav class="tsd-navigation"><a href="../index.html">Open Pioneer Trails Packages</a>
 <ul class="tsd-small-nested-navigation" id="tsd-nav-container">
