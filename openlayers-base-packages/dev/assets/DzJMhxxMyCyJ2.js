@@ -1,0 +1,1 @@
+import{i as e}from"./BgaNhQyEUDhs.js";import{rs as t,ts as n,vi as r}from"./Wy-FrNx0AC1V.js";var i=n(),a=(0,e(t(),1).forwardRef)(function(e,t){return(0,i.jsx)(r,{align:`center`,...e,direction:`row`,ref:t})});a.displayName=`HStack`;export{a as t};
