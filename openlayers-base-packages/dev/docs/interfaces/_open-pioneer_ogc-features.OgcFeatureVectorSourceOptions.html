@@ -16,7 +16,7 @@
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">OgcFeatureVectorSourceOptions</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#additionaloptions">additionalOptions</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Options</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Feature</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Geometry</span><span class="tsd-signature-symbol">,</span> <span class="tsd-signature-symbol">{</span> <span class="tsd-signature-symbol">[</span><span class="tsd-kind-index-signature">x</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]:</span> <span class="tsd-signature-type">any</span> <span class="tsd-signature-symbol">}</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#attributions">attributions</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">AttributionLike</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#baseurl">baseUrl</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#collectionid">collectionId</a><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#crs">crs</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#limit">limit</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#maxconcurrentrequests">maxConcurrentRequests</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#rewriteurl">rewriteUrl</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">URL</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-property" href="#strategy">strategy</a><span class="tsd-signature-symbol">?:</span> <a href="../types/_open-pioneer_ogc-features.OgcFetchStrategy.html" class="tsd-signature-type tsd-kind-type-alias">OgcFetchStrategy</a><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L26">api.ts:26</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L26">api.ts:26</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -43,7 +43,7 @@
 <div class="tsd-comment tsd-typography"><p>Optional additional options for the VectorSource.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L64">api.ts:64</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L64">api.ts:64</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="attributions"><code class="tsd-tag">Optional</code><span>attributions</span><a href="#attributions" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">attributions</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">AttributionLike</span></div>
@@ -53,21 +53,21 @@ If the property is not set or <code>undefined</code>, the vector source will che
 Setting the this value to the empty string will explicitly disable attributions for this vector source, even if the collection metadata contains an <code>attribution</code> property.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L61">api.ts:61</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L61">api.ts:61</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="baseurl"><span>base<wbr/>Url</span><a href="#baseurl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">baseUrl</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The base-URL right to the &quot;/collections&quot;-part</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L28">api.ts:28</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L28">api.ts:28</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="collectionid"><span>collection<wbr/>Id</span><a href="#collectionid" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">collectionId</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 <div class="tsd-comment tsd-typography"><p>The collection-ID</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L31">api.ts:31</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L31">api.ts:31</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="crs"><code class="tsd-tag">Optional</code><span>crs</span><a href="#crs" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">crs</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">string</span></div>
@@ -75,7 +75,7 @@ Setting the this value to the empty string will explicitly disable attributions 
 If not provided, the vector source will attempt to use the map's CRS if supported by the collection, or fall back to CRS84 otherwise.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L37">api.ts:37</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L37">api.ts:37</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="limit"><code class="tsd-tag">Optional</code><span>limit</span><a href="#limit" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">limit</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
@@ -87,14 +87,14 @@ is used for the page size</p>
 Defaults to <code>2500</code> for Offset-Strategy.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L49">api.ts:49</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L49">api.ts:49</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="maxconcurrentrequests"><code class="tsd-tag">Optional</code><span>max<wbr/>Concurrent<wbr/>Requests</span><a href="#maxconcurrentrequests" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">maxConcurrentRequests</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span></div>
 <div class="tsd-comment tsd-typography"><p>The maximum number of concurrent requests. Defaults to <code>6</code>.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L52">api.ts:52</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L52">api.ts:52</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="rewriteurl"><code class="tsd-tag">Optional</code><span>rewrite<wbr/>Url</span><a href="#rewriteurl" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">rewriteUrl</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">url</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">URL</span><span class="tsd-signature-symbol">)</span> <span class="tsd-signature-symbol">=&gt;</span> <span class="tsd-signature-type">URL</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></div>
@@ -106,7 +106,7 @@ predefined parameters (such as the CRS or the response format) are overwritten.
 The vector source might add additional parameters to its request URLs in the future.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L83">api.ts:83</a></li></ul></aside></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L83">api.ts:83</a></li></ul></aside></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="strategy"><code class="tsd-tag">Optional</code><span>strategy</span><a href="#strategy" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">strategy</span><span class="tsd-signature-symbol">?:</span> <a href="../types/_open-pioneer_ogc-features.OgcFetchStrategy.html" class="tsd-signature-type tsd-kind-type-alias">OgcFetchStrategy</a></div>
@@ -115,7 +115,7 @@ Allowed value are <code>offset</code> and <code>next</code>.
 By default, the vector source attempts to detect the server's capabilities and will prefer <code>&quot;offset&quot;</code>, if possible.</p>
 </div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/fab4c36684e925d9931f20d60c594173b5d15afe/src/packages/ogc-features/api.ts#L71">api.ts:71</a></li></ul></aside></section></section></details></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/9a296c253fed6040fda176d76895e3d135410de6/src/packages/ogc-features/api.ts#L71">api.ts:71</a></li></ul></aside></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
