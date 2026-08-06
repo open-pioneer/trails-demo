@@ -1,1 +1,0 @@
-import{ja as e,no as t,qa as n}from"./CE71Mlmg7jfF.js";function r(r){let i=()=>{let e=t(r);r.dispatchEvent(new e.MouseEvent(`click`))};n()?e(r,`keyup`,i):queueMicrotask(i)}export{r as t};

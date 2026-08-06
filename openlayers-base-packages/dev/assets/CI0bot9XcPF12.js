@@ -1,1 +1,0 @@
-import{pa as e,wo as t}from"./CE71Mlmg7jfF.js";var[n,r]=t({name:`RenderStrategyContext`,hookName:`useRenderStrategyContext`,providerName:`<RenderStrategyPropsProvider />`}),i=t=>e()(t,[`lazyMount`,`unmountOnExit`]);export{i as n,r,n as t};
