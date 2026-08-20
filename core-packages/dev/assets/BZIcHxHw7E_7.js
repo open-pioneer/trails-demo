@@ -1,1 +1,0 @@
-import{r as e}from"./hePW80VL8P5H.js";import{ii as t,si as n}from"./De-pq2pQvVEW.js";import{t as r}from"./DYzijY_5y5jS.js";var i=t(),a=(0,e(n(),1).forwardRef)(function(e,t){return(0,i.jsx)(r,{px:`0`,py:`0`,_icon:{fontSize:`1.2em`},ref:t,...e})});a.displayName=`IconButton`;export{a as t};
