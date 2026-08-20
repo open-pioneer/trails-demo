@@ -1,1 +1,0 @@
-import{Ja as e,Ma as t,ro as n}from"./Hadu9x2xmee8.js";function r(r){let i=()=>{let e=n(r);r.dispatchEvent(new e.MouseEvent(`click`))};e()?t(r,`keyup`,i):queueMicrotask(i)}export{r as t};
