@@ -1,0 +1,1 @@
+import{Gr as e}from"./De-pq2pQvVEW.js";var t=e=>e?``:void 0,{withContext:n,PropsProvider:r}=e({key:`container`}),i=n(`div`);export{t as n,i as t};
