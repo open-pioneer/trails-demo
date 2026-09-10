@@ -15,14 +15,14 @@
 <div class="tsd-comment tsd-typography"><p>The interface implemented by the Keycloak authentication plugin.</p>
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">KeycloakAuthPlugin</span> <span class="tsd-signature-symbol">{</span><br/>    <a class="tsd-kind-property" href="#declare_service_interface">&quot;[DECLARE_SERVICE_INTERFACE]&quot;</a><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;authentication-keycloak.KeycloakAuthPlugin&quot;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getauthstate-1">getAuthState</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_authentication.AuthState.html" class="tsd-signature-type tsd-kind-type-alias">AuthState</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getloginbehavior-1">getLoginBehavior</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_authentication.LoginBehavior.html" class="tsd-signature-type tsd-kind-type-alias">LoginBehavior</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#logout-1">logout</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">KeycloakLogoutOptions</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div>
-<section class="tsd-panel tsd-hierarchy" data-refl="1148">
+<section class="tsd-panel tsd-hierarchy" data-refl="1152">
 <h4>Hierarchy (<a href="../hierarchy.html#@open-pioneer/authentication-keycloak.KeycloakAuthPlugin">View Summary</a>)</h4>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><a href="_open-pioneer_authentication.AuthPlugin.html" class="tsd-signature-type tsd-kind-interface">AuthPlugin</a>
 <ul class="tsd-hierarchy">
 <li class="tsd-hierarchy-item"><span class="tsd-hierarchy-target">KeycloakAuthPlugin</span></li></ul></li></ul></section><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/932f4977f921de2672b5c8f28976061fc189088f/src/packages/authentication-keycloak/api.ts#L96">authentication-keycloak/api.ts:96</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/a38e9342d3794e552dfd9bbf59e342d5b9a3a11e/src/packages/authentication-keycloak/api.ts#L96">authentication-keycloak/api.ts:96</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -45,7 +45,7 @@
 <h3 class="tsd-anchor-link" id="declare_service_interface"><code class="tsd-tag">Optional</code> <code class="tsd-tag">Readonly</code><span>[<wbr/>DECLARE_<wbr/>SERVICE_<wbr/>INTERFACE]</span><a href="#declare_service_interface" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <div class="tsd-signature"><span class="tsd-kind-property">&quot;[DECLARE_SERVICE_INTERFACE]&quot;</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">&quot;authentication-keycloak.KeycloakAuthPlugin&quot;</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/932f4977f921de2672b5c8f28976061fc189088f/src/packages/authentication-keycloak/api.ts#L97">authentication-keycloak/api.ts:97</a></li></ul></aside></section></section></details>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/a38e9342d3794e552dfd9bbf59e342d5b9a3a11e/src/packages/authentication-keycloak/api.ts#L97">authentication-keycloak/api.ts:97</a></li></ul></aside></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -62,7 +62,7 @@ Emit the <code>changed</code> event instead to communicate that there is a new s
 <h4 class="tsd-returns-title">Returns <a href="../types/_open-pioneer_authentication.AuthState.html" class="tsd-signature-type tsd-kind-type-alias">AuthState</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="_open-pioneer_authentication.AuthPlugin.html">AuthPlugin</a>.<a href="_open-pioneer_authentication.AuthPlugin.html#getauthstate">getAuthState</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/932f4977f921de2672b5c8f28976061fc189088f/src/packages/authentication/api.ts#L157">authentication/api.ts:157</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/a38e9342d3794e552dfd9bbf59e342d5b9a3a11e/src/packages/authentication/api.ts#L157">authentication/api.ts:157</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member tsd-is-inherited">
 <h3 class="tsd-anchor-link" id="getloginbehavior"><span>get<wbr/>Login<wbr/>Behavior</span><a href="#getloginbehavior" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures tsd-is-inherited">
@@ -74,7 +74,7 @@ Emit the <code>changed</code> event instead to communicate that there is a new s
 <h4 class="tsd-returns-title">Returns <a href="../types/_open-pioneer_authentication.LoginBehavior.html" class="tsd-signature-type tsd-kind-type-alias">LoginBehavior</a></h4><aside class="tsd-sources">
 <p>Inherited from <a href="_open-pioneer_authentication.AuthPlugin.html">AuthPlugin</a>.<a href="_open-pioneer_authentication.AuthPlugin.html#getloginbehavior">getLoginBehavior</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/932f4977f921de2672b5c8f28976061fc189088f/src/packages/authentication/api.ts#L162">authentication/api.ts:162</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/a38e9342d3794e552dfd9bbf59e342d5b9a3a11e/src/packages/authentication/api.ts#L162">authentication/api.ts:162</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="logout"><span>logout</span><a href="#logout" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -91,7 +91,7 @@ Emit the <code>changed</code> event instead to communicate that there is a new s
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <p>Overrides <a href="_open-pioneer_authentication.AuthPlugin.html">AuthPlugin</a>.<a href="_open-pioneer_authentication.AuthPlugin.html#logout">logout</a></p>
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/932f4977f921de2672b5c8f28976061fc189088f/src/packages/authentication-keycloak/api.ts#L104">authentication-keycloak/api.ts:104</a></li></ul></aside></div></li></ul></section></section></details></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-core-packages/blob/a38e9342d3794e552dfd9bbf59e342d5b9a3a11e/src/packages/authentication-keycloak/api.ts#L104">authentication-keycloak/api.ts:104</a></li></ul></aside></div></li></ul></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
