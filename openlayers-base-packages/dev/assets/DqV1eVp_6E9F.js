@@ -1,0 +1,1 @@
+import{$a as e,Ia as t,co as n}from"./Nlc_xxAv69NX.js";function r(r){let i=()=>{let e=n(r);r.dispatchEvent(new e.MouseEvent(`click`))};e()?t(r,`keyup`,i):queueMicrotask(i)}export{r as t};
