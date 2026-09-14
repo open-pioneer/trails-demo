@@ -1,0 +1,1 @@
+var e=JSON.parse(`{"highlight-and-zoom-app":{},"@open-pioneer/chakra-snippets":{"clipboard.copy":"copy","clipboard.copied":"copied","close-button.ariaLabel":"Close","carousel.next":"Next","carousel.prev":"Previous","password-input.triggerAriaLabel":"Toggle password visibility"},"@open-pioneer/map":{"attribution.label":"Attributions"}}`);export{e as default};
