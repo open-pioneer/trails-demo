@@ -1,0 +1,1 @@
+import{Xt as e}from"./BRbsInKigXDK.js";var{withContext:t,PropsProvider:n}=e({key:`container`}),r=t(`div`);export{r as t};
