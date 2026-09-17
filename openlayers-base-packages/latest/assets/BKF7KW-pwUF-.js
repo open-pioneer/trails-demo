@@ -1,1 +1,0 @@
-import{Yo as e}from"./Wy-FrNx0AC1V.js";var t=e(`div`,{base:{display:`flex`,alignItems:`center`,justifyContent:`center`},variants:{inline:{true:{display:`inline-flex`}}}});t.displayName=`Center`;export{t};
