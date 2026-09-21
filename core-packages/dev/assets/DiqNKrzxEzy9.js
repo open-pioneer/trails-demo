@@ -1,0 +1,1 @@
+import{ii as e}from"./CPbTX7-r3TNH.js";var t=e(`div`);t.displayName=`Box`;export{t};
