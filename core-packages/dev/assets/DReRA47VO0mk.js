@@ -1,1 +1,0 @@
-import{ei as e}from"./CPbTX7-r3TNH.js";var{withContext:t,PropsProvider:n}=e({key:`text`}),r=t(`p`);export{r as t};
