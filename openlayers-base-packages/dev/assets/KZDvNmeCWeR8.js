@@ -1,0 +1,1 @@
+import{Po as e,xa as t}from"./BdS-fsYZo6q2.js";var[n,r]=e({name:`RenderStrategyContext`,hookName:`useRenderStrategyContext`,providerName:`<RenderStrategyPropsProvider />`}),i=e=>t()(e,[`lazyMount`,`unmountOnExit`,`hideMode`]);export{i as n,r,n as t};
