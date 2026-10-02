@@ -63,7 +63,9 @@ These are (mostly) default, unmodified snippets downloaded using the Chakra CLI.
 </ul>
 <h3 id="differences-from-chakras-default-snippets" class="tsd-anchor-link">Differences from Chakra's default snippets<a href="#differences-from-chakras-default-snippets" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul>
-<li>Aria labels and messages are translated (this currently only affects the <code>CloseButton</code> and the <code>Clipboard</code>).</li>
+<li>Aria labels and messages are translated (<code>Carousel</code>, <code>Clipboard</code>, <code>CloseButton</code> and <code>PasswordInput</code>).</li>
+<li><code>tooltip.tsx</code> keeps rendering <code>Tooltip.Root</code> when <code>disabled</code> is set, so the trigger does not lose focus when the prop toggles.</li>
+<li><code>tags-input.tsx</code> adds a type annotation to <code>TagsInputPropsProvider</code>.</li>
 </ul>
 <h2 id="license" class="tsd-anchor-link">License<a href="#license" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2>
 <p>Apache-2.0 (see <code>LICENSE</code> file)</p>
