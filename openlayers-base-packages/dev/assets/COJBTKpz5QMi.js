@@ -1,0 +1,1 @@
+import{ss as e}from"./DaCdH0q431Jt.js";var t=e(`div`,{base:{display:`flex`,alignItems:`center`,justifyContent:`center`},variants:{inline:{true:{display:`inline-flex`}}}});t.displayName=`Center`;export{t};
