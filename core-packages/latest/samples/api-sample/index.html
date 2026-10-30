@@ -5,36 +5,36 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" type="image/x-icon" href="../../assets/favicon-CMHk4Wkk.ico" />
         <title>API Sample</title>
-      <script type="module" crossorigin src="../../assets/C16-cqfYlkdV.js"></script>
-      <link rel="modulepreload" crossorigin href="../../assets/hePW80VL8P5H.js">
+      <script type="module" crossorigin src="../../assets/BBsk6IESa8pl.js"></script>
+      <link rel="modulepreload" crossorigin href="../../assets/XKyaHtl9ydNo.js">
       <link rel="modulepreload" crossorigin href="../../assets/P2Xu9kJm-Jyv.js">
-      <link rel="modulepreload" crossorigin href="../../assets/Dgqtrr5zN82M.js">
-      <link rel="modulepreload" crossorigin href="../../assets/CBQSC8A_oNMQ.js">
-      <link rel="modulepreload" crossorigin href="../../assets/Be0-SAuTgD9p.js">
-      <link rel="modulepreload" crossorigin href="../../assets/BKoVBLrXKAAM.js">
-      <link rel="modulepreload" crossorigin href="../../assets/BLJ-cICp3bb4.js">
+      <link rel="modulepreload" crossorigin href="../../assets/B_lJMrsLNECH.js">
+      <link rel="modulepreload" crossorigin href="../../assets/B01aQy0pRLV5.js">
+      <link rel="modulepreload" crossorigin href="../../assets/BvWPoj1XR31Z.js">
+      <link rel="modulepreload" crossorigin href="../../assets/doNiHNrkjZ_a.js">
+      <link rel="modulepreload" crossorigin href="../../assets/QsPEVppqpf9o.js">
     </head>
     <body>
         <api-app id="app"></api-app>
-    </body>
-    <script>
-        document.getElementById("app").addEventListener("my-custom-event", (event) => {
-            console.log("Got event from app:", event);
-        });
+        <script>
+            document.getElementById("app").addEventListener("my-custom-event", (event) => {
+                console.log("Got event from app:", event);
+            });
 
-        customElements.whenDefined("api-app").then(() => {
-            const app = document.getElementById("app");
-            app.when().then(
-                (api) => {
-                    let count = 0;
-                    setInterval(() => {
-                        api.changeText(`Text has been changed ${++count} times.`);
-                    }, 1000);
-                },
-                (error) => {
-                    console.error("App did not initialize", error);
-                }
-            );
-        });
-    </script>
+            customElements.whenDefined("api-app").then(() => {
+                const app = document.getElementById("app");
+                app.when().then(
+                    (api) => {
+                        let count = 0;
+                        setInterval(() => {
+                            api.changeText(`Text has been changed ${++count} times.`);
+                        }, 1000);
+                    },
+                    (error) => {
+                        console.error("App did not initialize", error);
+                    }
+                );
+            });
+        </script>
+    </body>
 </html>
