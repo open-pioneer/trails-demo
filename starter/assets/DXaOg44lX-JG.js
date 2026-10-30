@@ -1,0 +1,1 @@
+import{Xt as e}from"./DINkAeyJp3OF.js";var{withContext:t,PropsProvider:n}=e({key:`container`}),r=t(`div`);export{r as t};

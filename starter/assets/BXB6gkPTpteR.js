@@ -1,0 +1,1 @@
+var e=JSON.parse(`{"empty":{"heading":"Empty App","text":"This is an empty app."},"sample-package":{"label":"The text to show"}}`);export{e as default};
