@@ -26,7 +26,7 @@ To show the toolset menu, set the <code>showTools</code> property to <code>true<
 
 <p>The default tools provided by the TOC are:</p>
 <ul>
-<li>A button to hide all layers (sets <code>visibility</code> to false, enabled by default)</li>
+<li>A button to hide all layers that are shown in the TOC (sets <code>visible</code> to <code>false</code>, enabled by default)</li>
 <li>A button to collapse all groups (enabled by default if groups are collapsible)</li>
 </ul>
 <p>These tools can be configured by using the <code>toolsConfig</code> property.</p>
@@ -63,7 +63,8 @@ To show the toolset menu, set the <code>showTools</code> property to <code>true<
 Groups can be made collapsible through user action by setting the <code>collapsibleGroups</code> property to <code>true</code>.
 If enabled, a toggle button appears next to parent nodes by which the user can expand or collapse the group.</p>
 <p>Using the <code>initiallyCollapsed</code> property, groups can be collapsed by default when the TOC is rendered.
-If <code>initiallyCollapsed</code> is set to <code>true</code>, <code>collapsibleGroups</code> is automatically set to <code>true</code>, too.</p>
+If <code>initiallyCollapsed</code> is set to <code>true</code>, <code>collapsibleGroups</code> defaults to <code>true</code>, too.
+An explicit <code>collapsibleGroups={false}</code> wins, and <code>initiallyCollapsed</code> has no effect in that case.</p>
 <pre><code class="tsx"><span class="hl-0">&lt;</span><span class="hl-1">Toc</span><br/><span class="hl-2">    </span><span class="hl-3">map</span><span class="hl-2">=</span><span class="hl-4">{</span><span class="hl-5">map</span><span class="hl-4">}</span><br/><span class="hl-2">    </span><span class="hl-3">collapsibleGroups</span><span class="hl-2">=</span><span class="hl-4">{true}</span><br/><span class="hl-2">    </span><span class="hl-3">initiallyCollapsed</span><span class="hl-2">=</span><span class="hl-4">{true}</span><span class="hl-2"> </span><span class="hl-6">// Whether groups are collapsed by default. Defaults to false.</span><br/><span class="hl-0">/&gt;</span>
 </code><button type="button">Copy</button></pre>
 
@@ -72,7 +73,7 @@ If <code>initiallyCollapsed</code> is set to <code>true</code>, <code>collapsibl
 <pre><code class="typescript"><span class="hl-6">//internal layer will not be displayed in the Toc</span><br/><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-12">internalLayer</span><span class="hl-2"> = </span><span class="hl-5">layerFactory</span><span class="hl-2">.</span><span class="hl-9">create</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-5">type:</span><span class="hl-2"> </span><span class="hl-5">SimpleLayer</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">id:</span><span class="hl-2"> </span><span class="hl-10">&quot;layer1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">title:</span><span class="hl-2"> </span><span class="hl-10">&quot;layer 1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">olLayer:</span><span class="hl-2"> </span><span class="hl-5">myOlLayer</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">internal:</span><span class="hl-2"> </span><span class="hl-4">true</span><br/><span class="hl-2">});</span>
 </code><button type="button">Copy</button></pre>
 
-<p>The layer's <code>internal</code> state also affects other UI widgets (e.g. Legend). If the layer should be hidden specifically in the Toc (but not in other widgets) the <code>listMode</code> attribute can be used to hide the layer item.</p>
+<p>The layer's <code>internal</code> state also affects other components (e.g. Legend). If the layer should be hidden specifically in the Toc (but not in other components) the <code>listMode</code> attribute can be used to hide the layer item.</p>
 <pre><code class="typescript"><span class="hl-6">//use listMode to hide the layer specifically in Toc</span><br/><span class="hl-4">const</span><span class="hl-2"> </span><span class="hl-12">hiddenLayer</span><span class="hl-2"> = </span><span class="hl-5">layerFactory</span><span class="hl-2">.</span><span class="hl-9">create</span><span class="hl-2">({</span><br/><span class="hl-2">    </span><span class="hl-5">type:</span><span class="hl-2"> </span><span class="hl-5">SimpleLayer</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">id:</span><span class="hl-2"> </span><span class="hl-10">&quot;layer1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">title:</span><span class="hl-2"> </span><span class="hl-10">&quot;layer 1&quot;</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">olLayer:</span><span class="hl-2"> </span><span class="hl-5">myOlLayer</span><span class="hl-2">,</span><br/><span class="hl-2">    </span><span class="hl-5">attributes:</span><span class="hl-2"> {</span><br/><span class="hl-2">        </span><span class="hl-5">toc:</span><span class="hl-2"> {</span><br/><span class="hl-2">            </span><span class="hl-5">listMode:</span><span class="hl-2"> </span><span class="hl-10">&quot;hide&quot;</span><br/><span class="hl-2">        }</span><br/><span class="hl-2">    }</span><br/><span class="hl-2">});</span>
 </code><button type="button">Copy</button></pre>
 
