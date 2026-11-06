@@ -16,7 +16,7 @@
 </div></section>
 <div class="tsd-signature"><span class="tsd-signature-keyword">interface</span> <span class="tsd-kind-interface">MapModel</span> <span class="tsd-signature-symbol">{</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#attributionitemsattributionitems">attributionItems</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.AttributionItem.html" class="tsd-signature-type tsd-kind-interface">AttributionItem</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#centercenter">center</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Coordinate</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#containercontainer">container</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#destroy-1">destroy</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#destroyeddestroyed">destroyed</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">EventSource</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getcenterpointresolution-1">getCenterPointResolution</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#getviewresolutionforscale-1">getViewResolutionForScale</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">scale</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">targetDpi</span><span class="tsd-signature-symbol">?:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#highlight-1">highlight</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">geometries</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.DisplayTarget.html" class="tsd-signature-type tsd-kind-type-alias">DisplayTarget</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="_open-pioneer_map.HighlightOptions.html" class="tsd-signature-type tsd-kind-interface">HighlightOptions</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.Highlight.html" class="tsd-signature-type tsd-kind-interface">Highlight</a><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#highlightandzoom-1">highlightAndZoom</a><span class="tsd-signature-symbol">(</span><br/>        <span class="tsd-kind-parameter">geometries</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.DisplayTarget.html" class="tsd-signature-type tsd-kind-type-alias">DisplayTarget</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span><br/>        <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="_open-pioneer_map.HighlightZoomOptions.html" class="tsd-signature-type tsd-kind-interface">HighlightZoomOptions</a><span class="tsd-signature-symbol">,</span><br/>    <span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.Highlight.html" class="tsd-signature-type tsd-kind-interface">Highlight</a><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#highlightshighlights">highlights</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.Highlights.html" class="tsd-signature-type tsd-kind-interface">Highlights</a><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#idid">id</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#initialextentinitialextent">initialExtent</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.ExtentConfig.html" class="tsd-signature-type tsd-kind-interface">ExtentConfig</a> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#layerslayers">layers</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.LayerCollection.html" class="tsd-signature-type tsd-kind-interface">LayerCollection</a><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#loadingloading">loading</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#olmapolmap">olMap</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#olviewolview">olView</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">View</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#overlaysoverlays">overlays</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <a href="_open-pioneer_map.Overlays.html" class="tsd-signature-type tsd-kind-interface">Overlays</a><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#projectionprojection">projection</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Projection</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#removehighlights-1">removeHighlights</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#resolutionresolution">resolution</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#rotationrotation">rotation</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#scalescale">scale</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#setscale-1">setScale</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">newScale</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#viewportviewport">viewport</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">HTMLElement</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#whendisplayed-1">whenDisplayed</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">;</span><br/>    <a class="tsd-kind-call-signature" href="#zoom-1">zoom</a><span class="tsd-signature-symbol">(</span><span class="tsd-kind-parameter">displayTargets</span><span class="tsd-signature-symbol">:</span> <a href="../types/_open-pioneer_map.DisplayTarget.html" class="tsd-signature-type tsd-kind-type-alias">DisplayTarget</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">,</span> <span class="tsd-kind-parameter">options</span><span class="tsd-signature-symbol">?:</span> <a href="_open-pioneer_map.ZoomOptions.html" class="tsd-signature-type tsd-kind-interface">ZoomOptions</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">;</span><br/>    <span class="tsd-signature-keyword">get</span> <a class="tsd-kind-get-signature" href="#zoomlevelzoomlevel">zoomLevel</a><span class="tsd-signature-symbol">()</span><span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol">;</span><br/><span class="tsd-signature-symbol">}</span></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L137">src/packages/map/model/MapModel.ts:137</a></li></ul></aside>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L137">src/packages/map/model/MapModel.ts:137</a></li></ul></aside>
 <section class="tsd-panel-group tsd-index-group">
 <section class="tsd-panel tsd-index-panel">
 <details class="tsd-index-content tsd-accordion" open><summary class="tsd-accordion-summary tsd-index-summary"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
@@ -68,7 +68,7 @@
 </div>
 <h4 class="tsd-returns-title">Returns <a href="_open-pioneer_map.AttributionItem.html" class="tsd-signature-type tsd-kind-interface">AttributionItem</a><span class="tsd-signature-symbol">[]</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L397">src/packages/map/model/MapModel.ts:397</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L397">src/packages/map/model/MapModel.ts:397</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="center"><span>center</span><a href="#center" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -80,7 +80,7 @@ Same as <code>olView.getCenter()</code>, but reactive.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Coordinate</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L317">src/packages/map/model/MapModel.ts:317</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L317">src/packages/map/model/MapModel.ts:317</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="container"><span>container</span><a href="#container" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -94,7 +94,7 @@ May change at runtime.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L390">src/packages/map/model/MapModel.ts:390</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L390">src/packages/map/model/MapModel.ts:390</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="destroyed"><span>destroyed</span><a href="#destroyed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -105,7 +105,7 @@ May change at runtime.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">EventSource</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L275">src/packages/map/model/MapModel.ts:275</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L275">src/packages/map/model/MapModel.ts:275</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="highlights"><span>highlights</span><a href="#highlights" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -116,7 +116,7 @@ May change at runtime.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <a href="_open-pioneer_map.Highlights.html" class="tsd-signature-type tsd-kind-interface">Highlights</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L447">src/packages/map/model/MapModel.ts:447</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L447">src/packages/map/model/MapModel.ts:447</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="id"><span>id</span><a href="#id" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -127,7 +127,7 @@ May change at runtime.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L292">src/packages/map/model/MapModel.ts:292</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L292">src/packages/map/model/MapModel.ts:292</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="initialextent"><span>initial<wbr/>Extent</span><a href="#initialextent" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -140,7 +140,7 @@ This is guaranteed to be initialized if the promise returned by <a href="#whendi
 </div>
 <h4 class="tsd-returns-title">Returns <a href="_open-pioneer_map.ExtentConfig.html" class="tsd-signature-type tsd-kind-interface">ExtentConfig</a> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L302">src/packages/map/model/MapModel.ts:302</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L302">src/packages/map/model/MapModel.ts:302</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="layers"><span>layers</span><a href="#layers" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -153,7 +153,7 @@ Also note that not all layers in the OpenLayers map may be contained in this col
 </div>
 <h4 class="tsd-returns-title">Returns <a href="_open-pioneer_map.LayerCollection.html" class="tsd-signature-type tsd-kind-interface">LayerCollection</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L379">src/packages/map/model/MapModel.ts:379</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L379">src/packages/map/model/MapModel.ts:379</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="loading"><span>loading</span><a href="#loading" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -166,7 +166,7 @@ see <a href="https://openlayers.org/en/latest/apidoc/module-ol_MapEvent-MapEvent
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L369">src/packages/map/model/MapModel.ts:369</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L369">src/packages/map/model/MapModel.ts:369</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="olmap"><span>ol<wbr/>Map</span><a href="#olmap" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -177,7 +177,7 @@ see <a href="https://openlayers.org/en/latest/apidoc/module-ol_MapEvent-MapEvent
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Map</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L404">src/packages/map/model/MapModel.ts:404</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L404">src/packages/map/model/MapModel.ts:404</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="olview"><span>ol<wbr/>View</span><a href="#olview" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -188,7 +188,7 @@ see <a href="https://openlayers.org/en/latest/apidoc/module-ol_MapEvent-MapEvent
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">View</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L424">src/packages/map/model/MapModel.ts:424</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L424">src/packages/map/model/MapModel.ts:424</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="overlays"><span>overlays</span><a href="#overlays" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -199,7 +199,7 @@ see <a href="https://openlayers.org/en/latest/apidoc/module-ol_MapEvent-MapEvent
 </div>
 <h4 class="tsd-returns-title">Returns <a href="_open-pioneer_map.Overlays.html" class="tsd-signature-type tsd-kind-interface">Overlays</a></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L440">src/packages/map/model/MapModel.ts:440</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L440">src/packages/map/model/MapModel.ts:440</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="projection"><span>projection</span><a href="#projection" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -210,7 +210,7 @@ see <a href="https://openlayers.org/en/latest/apidoc/module-ol_MapEvent-MapEvent
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Projection</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L309">src/packages/map/model/MapModel.ts:309</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L309">src/packages/map/model/MapModel.ts:309</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="resolution"><span>resolution</span><a href="#resolution" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -226,7 +226,7 @@ Use <a href="#getcenterpointresolution" class="tsd-kind-method">getCenterPointRe
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L328">src/packages/map/model/MapModel.ts:328</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L328">src/packages/map/model/MapModel.ts:328</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="rotation"><span>rotation</span><a href="#rotation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -238,7 +238,7 @@ Same as <code>olView.getRotation()</code>, but reactive.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L344">src/packages/map/model/MapModel.ts:344</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L344">src/packages/map/model/MapModel.ts:344</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="scale"><span>scale</span><a href="#scale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -257,7 +257,7 @@ The value is rounded to an integer, since it is intended for display.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L359">src/packages/map/model/MapModel.ts:359</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L359">src/packages/map/model/MapModel.ts:359</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="viewport"><span>viewport</span><a href="#viewport" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -268,7 +268,7 @@ The value is rounded to an integer, since it is intended for display.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">HTMLElement</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L411">src/packages/map/model/MapModel.ts:411</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L411">src/packages/map/model/MapModel.ts:411</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="zoomlevel"><span>zoom<wbr/>Level</span><a href="#zoomlevel" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -280,7 +280,7 @@ Same as <code>olView.getZoom()</code>, but reactive.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span> <span class="tsd-signature-symbol">|</span> <span class="tsd-signature-type">undefined</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L336">src/packages/map/model/MapModel.ts:336</a></li></ul></aside></div></li></ul></section></section></details>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L336">src/packages/map/model/MapModel.ts:336</a></li></ul></aside></div></li></ul></section></section></details>
 <details class="tsd-panel-group tsd-member-group tsd-accordion" open><summary class="tsd-accordion-summary" data-key="section-Methods"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><use href="../assets/icons.svg#icon-chevronDown"></use></svg>
 <h2 class="tsd-anchor-link" id="methods-1">Methods<a href="#methods-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h2></summary>
 <section>
@@ -294,7 +294,7 @@ Same as <code>olView.getZoom()</code>, but reactive.</p>
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L246">src/packages/map/model/MapModel.ts:246</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L246">src/packages/map/model/MapModel.ts:246</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getcenterpointresolution"><span>get<wbr/>Center<wbr/>Point<wbr/>Resolution</span><a href="#getcenterpointresolution" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -313,7 +313,7 @@ distance for every projection. It is derived from the current <code>resolution</
 <h4 class="tsd-anchor-link" id="see">See<a href="#see" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p><a href="../functions/_open-pioneer_map.getPointResolution.html" class="tsd-kind-function">getPointResolution</a></p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L475">src/packages/map/model/MapModel.ts:475</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L475">src/packages/map/model/MapModel.ts:475</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="getviewresolutionforscale"><span>get<wbr/>View<wbr/>Resolution<wbr/>For<wbr/>Scale</span><a href="#getviewresolutionforscale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -341,7 +341,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <h4 class="tsd-anchor-link" id="see-1">See<a href="#see-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p><a href="../functions/_open-pioneer_map.getResolutionForScale.html" class="tsd-kind-function">getResolutionForScale</a></p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L503">src/packages/map/model/MapModel.ts:503</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L503">src/packages/map/model/MapModel.ts:503</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="highlight"><span class="deprecated">highlight</span><a href="#highlight" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -363,7 +363,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <h4 class="tsd-anchor-link" id="deprecated">Deprecated<a href="#deprecated" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Highlight functions will be removed in a future major release; call <a href="_open-pioneer_map.Highlights.html#add" class="tsd-kind-method">Highlights.add</a> instead.</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L570">src/packages/map/model/MapModel.ts:570</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L570">src/packages/map/model/MapModel.ts:570</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="highlightandzoom"><span class="deprecated">highlight<wbr/>And<wbr/>Zoom</span><a href="#highlightandzoom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -384,7 +384,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <h4 class="tsd-anchor-link" id="deprecated-1">Deprecated<a href="#deprecated-1" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Highlight functions will be removed in a future major release; call <a href="_open-pioneer_map.Highlights.html#addandzoom" class="tsd-kind-method">Highlights.addAndZoom</a> instead.</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L582">src/packages/map/model/MapModel.ts:582</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L582">src/packages/map/model/MapModel.ts:582</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="removehighlights"><span class="deprecated">remove<wbr/>Highlights</span><a href="#removehighlights" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -399,7 +399,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <h4 class="tsd-anchor-link" id="deprecated-2">Deprecated<a href="#deprecated-2" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h4><p>Highlight functions will be removed in a future major release; call <a href="_open-pioneer_map.Highlights.html#clear" class="tsd-kind-method">Highlights.clear</a> instead.</p>
 </div></div><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L592">src/packages/map/model/MapModel.ts:592</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L592">src/packages/map/model/MapModel.ts:592</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="setscale"><span>set<wbr/>Scale</span><a href="#setscale" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -417,7 +417,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <li><span><span class="tsd-kind-parameter">newScale</span>: <span class="tsd-signature-type">number</span></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L459">src/packages/map/model/MapModel.ts:459</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L459">src/packages/map/model/MapModel.ts:459</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="whendisplayed"><span>when<wbr/>Displayed</span><a href="#whendisplayed" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -428,7 +428,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 </div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">void</span><span class="tsd-signature-symbol">&gt;</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L600">src/packages/map/model/MapModel.ts:600</a></li></ul></aside></div></li></ul></section>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L600">src/packages/map/model/MapModel.ts:600</a></li></ul></aside></div></li></ul></section>
 <section class="tsd-panel tsd-member">
 <h3 class="tsd-anchor-link" id="zoom"><span>zoom</span><a href="#zoom" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="../assets/icons.svg#icon-anchor"></use></svg></a></h3>
 <ul class="tsd-signatures">
@@ -444,7 +444,7 @@ than the screen. Defaults to <code>DEFAULT_DPI</code> (~90.71), the standardized
 <li><span><code class="tsd-tag">Optional</code><span class="tsd-kind-parameter">options</span>: <a href="_open-pioneer_map.ZoomOptions.html" class="tsd-signature-type tsd-kind-interface">ZoomOptions</a></span></li></ul></div>
 <h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4><aside class="tsd-sources">
 <ul>
-<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/f1149effcaea42adf195fc0b208d3c8d0ff2c2ad/src/packages/map/model/MapModel.ts#L520">src/packages/map/model/MapModel.ts:520</a></li></ul></aside></div></li></ul></section></section></details></div>
+<li>Defined in <a href="https://github.com/open-pioneer/trails-openlayers-base-packages/blob/de9bbe48c465bc5acec093371ba14ba394ae17c9/src/packages/map/model/MapModel.ts#L520">src/packages/map/model/MapModel.ts:520</a></li></ul></aside></div></li></ul></section></section></details></div>
 <div class="col-sidebar">
 <div class="page-menu">
 <div class="tsd-navigation settings">
