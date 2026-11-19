@@ -1,0 +1,1 @@
+import{Ta as e,Wo as t}from"./Bt2_yZbpabNM.js";var[n,r]=t({name:`RenderStrategyContext`,hookName:`useRenderStrategyContext`,providerName:`<RenderStrategyPropsProvider />`}),i=t=>e()(t,[`lazyMount`,`unmountOnExit`,`hideMode`]);export{i as n,r,n as t};

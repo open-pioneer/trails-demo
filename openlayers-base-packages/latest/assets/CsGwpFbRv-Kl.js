@@ -1,0 +1,1 @@
+import{Va as e}from"./Bt2_yZbpabNM.js";function t(t,n){let{rootEl:r,...i}=n||{};t&&r&&e(r)&&t.scrollIntoView(i)}export{t};
