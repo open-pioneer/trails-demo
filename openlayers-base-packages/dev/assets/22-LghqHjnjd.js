@@ -1,1 +1,0 @@
-import{ds as e}from"./C8--irgupcHh.js";var t=e(`div`,{base:{display:`flex`,alignItems:`center`,justifyContent:`center`},variants:{inline:{true:{display:`inline-flex`}}}});t.displayName=`Center`;export{t};
